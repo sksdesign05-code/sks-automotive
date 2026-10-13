@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>SKS Automotive | Sanatan Group - Bus Body Manufacturer on TATA Motors Chassis</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" /> -->
+
+  <!-- Material Symbols Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    .custom-scroll::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #0453cd;
+      border-radius: 2px;
+    }
+
+    .sks-padding {
+      padding: 120px 0px 120px 0px;
+    }
+
+    .sks-padding-top {
+      padding: 120px 0px 0px 0px;
+    }
+
+    .stroke-title {
+      font-size: 3rem;
+      font-family: 'Inter', sans-serif;
+      position: relative;
+      color: #fff;
+      -webkit-text-stroke: 1px #000000;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0.05em;
+    }
+
+    .bg-dark-textured {
+      background-color: #0b0c0e;
+      background-image:
+        radial-gradient(circle at 50% 20%, rgba(35, 38, 43, 0.45), transparent 70%),
+        radial-gradient(circle at 10% 80%, rgba(25, 27, 30, 0.6), transparent 50%),
+        radial-gradient(circle at 90% 70%, rgba(20, 22, 24, 0.6), transparent 50%),
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.15 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    /* .font-headline, font-heading-lg, font-heading-xl,font-heading-sm {
+            font-weight: 900!important;
+            font-family: 'Inter', sans-serif;
+        } */
+  </style>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            background: "#f9f9f9",
+            "surface-dim": "#dadada",
+            "tertiary-container": "#1b1b1b",
+            "primary-fixed-dim": "#c6c6c6",
+            "surface-tint": "#5e5e5e",
+            "slate-surface": "#F8FAFC",
+            "on-error": "#ffffff",
+            "surface-container": "#eeeeee",
+            secondary: "#5e5e5e",
+            "chrome-metallic": "#94A3B8",
+            "inverse-on-surface": "#f1f1f1",
+            "on-primary-fixed": "#1b1b1b",
+            "on-primary-fixed-variant": "#474747",
+            "secondary-fixed": "#e2e2e2",
+            "subtle-border": "#E2E8F0",
+            "primary-container": "#1b1b1b",
+            "surface-container-high": "#e8e8e8",
+            "surface-variant": "#e2e2e2",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed": "#1b1b1b",
+            "on-secondary-fixed": "#1b1b1b",
+            error: "#ba1a1a",
+            "on-tertiary-fixed-variant": "#474747",
+            "inverse-surface": "#303030",
+            outline: "#7e7576",
+            "inverse-primary": "#c6c6c6",
+            "on-primary": "#ffffff",
+            "tertiary-fixed-dim": "#c6c6c6",
+            "on-surface": "#1b1b1b",
+            "on-surface-variant": "#4c4546",
+            "black": "#0e1012",
+            "error-container": "#ffdad6",
+            "secondary-container": "#e2e2e2",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#848484",
+            primary: "#000000",
+            "on-secondary-container": "#646464",
+            surface: "#f9f9f9",
+            "secondary-fixed-dim": "#c6c6c6",
+            "on-background": "#1b1b1b",
+            tertiary: "#000000",
+            "outline-variant": "#cfc4c5",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#e2e2e2",
+            "surface-container-highest": "#e2e2e2",
+            "surface-container-low": "#f3f3f3",
+            "tertiary-fixed": "#e2e2e2",
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed-variant": "#474747",
+            "on-tertiary-container": "#848484",
+            "surface-bright": "#f9f9f9"
+          },
+          borderRadius: {
+            DEFAULT: "1rem",
+            lg: "2rem",
+            xl: "3rem",
+            full: "9999px"
+          },
+          spacing: {
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            gutter: "1.5rem",
+            "margin-mobile": "1rem",
+            margin: "2rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem"
+          },
+          fontFamily: {
+            "display-hero": ["Inter"],
+            "body-sm": ["Inter"],
+            "headline-lg": ["Inter"],
+            "label-sm": ["Inter"],
+            "label-lg": ["Inter"],
+            "headline-xl-mobile": ["Inter"],
+            "headline-sm": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-xl": ["Inter"],
+            "headline-md": ["Inter"],
+            "body-xl": ["Inter"],
+            "display-hero-mobile": ["Inter"],
+            "label-md": ["Inter"],
+            "body-lg": ["Inter"],
+            headline: ["Inter"],
+            display: ["Inter"],
+            body: ["Inter"],
+            label: ["Inter"]
+          },
+          fontSize: {
+            "display-hero": ["56px", {
+              lineHeight: "64px",
+              letterSpacing: "-0.03em",
+              fontWeight: "800"
+            }],
+            "body-sm": ["12px", {
+              lineHeight: "18px",
+              fontWeight: "400"
+            }],
+            "headline-lg": ["32px", {
+              lineHeight: "40px",
+              letterSpacing: "-0.015em",
+              fontWeight: "700"
+            }],
+            "label-sm": ["10px", {
+              lineHeight: "14px",
+              letterSpacing: "0.08em",
+              fontWeight: "700"
+            }],
+            "label-lg": ["14px", {
+              lineHeight: "20px",
+              letterSpacing: "0.05em",
+              fontWeight: "600"
+            }],
+            "headline-xl-mobile": ["28px", {
+              lineHeight: "36px",
+              letterSpacing: "-0.01em",
+              fontWeight: "700"
+            }],
+            "headline-sm": ["20px", {
+              lineHeight: "28px",
+              fontWeight: "600"
+            }],
+            "body-md": ["14px", {
+              lineHeight: "22px",
+              fontWeight: "400"
+            }],
+            "headline-xl": ["40px", {
+              lineHeight: "48px",
+              letterSpacing: "-0.02em",
+              fontWeight: "700"
+            }],
+            "headline-md": ["24px", {
+              lineHeight: "32px",
+              letterSpacing: "-0.01em",
+              fontWeight: "600"
+            }],
+            "body-xl": ["18px", {
+              lineHeight: "28px",
+              fontWeight: "400"
+            }],
+            "display-hero-mobile": ["36px", {
+              lineHeight: "44px",
+              letterSpacing: "-0.02em",
+              fontWeight: "800"
+            }],
+            "label-md": ["12px", {
+              lineHeight: "16px",
+              letterSpacing: "0.06em",
+              fontWeight: "600"
+            }],
+            "body-lg": ["16px", {
+              lineHeight: "26px",
+              fontWeight: "400"
+            }]
+          }
+        }
+      }
+    };
+  </script>
+
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #F1F5F9;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 4px;
+    }
+  </style>
+  <style data-purpose="accordion-transitions">
+    /* Smooth CSS Grid accordion expansion */
+    .accordion-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .accordion-content.is-open {
+      grid-template-rows: 1fr;
+    }
+
+    .accordion-inner {
+      overflow: hidden;
+    }
+
+    /* Icon rotation for toggle state */
+    .accordion-icon {
+      transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .accordion-icon.is-open {
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary selection:text-white">
+  <!-- Top Utilities Strip -->
+  <header class="bg-black text-chrome-metallic border-b border-subtle-border/20 text-xs hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-2 flex justify-between items-center">
+      <div class="flex items-center space-x-5">
+        <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
+          href="mailto:sales.skssanatan@gmail.com">
+          <span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="mail">mail</span>
+          sales.skssanatan@gmail.com
+        </a>
+        <span class="text-chrome-metallic/60">|</span>
+        <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
+          href="mailto:skscompany15@gmail.com">
+          <span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="mail">mail</span>
+          skscompany15@gmail.com
+        </a>
+
+      </div>
+      <div class="flex items-center space-x-3">
+        <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
+          href="tel:+919201837575">
+          <span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="call">call</span>
+          +91 92018 37575
+          <!-- <span class="text-chrome-metallic/60">|</span> -->
+          <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
+            href="tel:+919243561550">
+            <span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="call">call</span>
+            +91 92435 61550
+          </a>
+          <!-- <span class="inline-flex items-center gap-1.5 text-surface-container-lowest font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Authorized Bus Body Manufacturer on TATA Motors Chassis
+        </span>
+        <span class="text-chrome-metallic/60">|</span>
+        <span class="flex items-center gap-1 hover:text-surface-container-lowest transition-colors">
+          <span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>
+          AIS-052 &amp; ARAI Certified
+        </span>
+        <span class="text-chrome-metallic/60">|</span>
+        <span class="text-chrome-metallic">Indore Works (Village Jakhya, MP)</span> -->
+      </div>
+
+    </div>
+  </header>
+  <!-- TopNavBar (Shared Component) -->
+  <nav class="sticky top-0 z-50 bg-surface-container-lowest dark:bg-black shadow-[0_1px_3px_0_rgba(11,25,44,0.04)]">
+    <div class="flex justify-between items-center w-full px-lg-6 px-xl-6 px-sm-2 lg:px-8 max-w-7xl mx-auto h-20">
+      <!-- Brand Logo -->
+      <a class="flex items-center gap-3 group" href="index.html">
+        <div
+          class="w-10 h-10 rounded-xl flex items-center justify-center text-white font-heading font-black text-xl transition-transform">
+          <img src="img/sks-logo.png">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-black text-2xl tracking-tight flex items-center text-[#000]">
+            SKS Automotive<span class="text-[#C1C7CD]">.</span>
+          </span>
+          <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold -mt-1">SANATAN GROUP</span>
+        </div>
+      </a>
+      <!-- Desktop Nav Links -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a class="relative py-1 text-secondary font-semibold text-sm hover:text-on-surface transition-colors duration-200 group"
+          href="index.html"><span class="text-on-surface">Home</span>
+          <span
+            class="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary transition-all duration-300 ease-out group-hover:w-full"></span>
+          </a>
+
+        <a class="relative py-1 text-on-surface-variant font-medium text-sm hover:text-on-surface transition-colors duration-200 group"
+          href="aboutus.html"> <span class="">About Us</span>
+          <span
+            class="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary transition-all duration-300 ease-out group-hover:w-full"></span>
+        </a>
+        <a class="relative py-1 text-on-surface-variant font-medium text-sm hover:text-on-surface transition-colors duration-200 group"
+          href="product-facilities.html">
+          <span class="">Product Facilities</span>
+          <span
+            class="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary transition-all duration-300 ease-out group-hover:w-full"></span>
+        </a>
+        <!-- <a class="text-on-surface-variant dark:text-chrome-metallic font-medium transition-colors hover:text-secondary dark:hover:text-secondary-fixed text-label-lg font-label-lg"
+          href="#">Products</a> -->
+        <div class="relative group py-2">
+          <button
+            class="text-on-surface-variant font-medium transition-colors hover:text-secondary text-sm inline-flex items-center gap-1 focus:outline-none"
+            type="button">
+            <span class="">Products</span>
+            <span
+              class="material-symbols-outlined text-base group-hover:rotate-180 transition-transform duration-300 inline-block">expand_more</span>
+          </button>
+          <div
+            class="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[720px] z-50 opacity-0 invisible pointer-events-none translate-y-2 scale-95 group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:scale-100 transition-all duration-300 ease-out origin-top">
+            <div
+              class="bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/60 p-5 grid grid-cols-3 gap-4">
+              <!-- Item 1: School Bus -->
+              <a class="group/item flex flex-col rounded-lg p-2.5 transition-colors hover:border-outline-variant/40"
+                href="school-buses.html">
+                <div class="h-28 w-full rounded overflow-hidden bg-white mb-3 relative">
+                  <img alt="School Bus"
+                    class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-200"
+                    src="img/school-bus.png" />
+                </div>
+                <div
+                  class="font-bold text-sm text-on-surface group-hover/item:text-secondary flex items-center justify-center">
+                  <span class="">School Bus</span>
+                  <span
+                    class="material-symbols-outlined text-sm opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-0.5 transition-all">arrow_forward</span>
+                </div>
+              </a>
+              <!-- Item 2: Staff & Route Bus -->
+              <a class="group/item flex flex-col rounded-lg p-2.5 transition-colors hover:border-outline-variant/40"
+                href="staff-buses.html">
+                <div class="h-28 w-full rounded overflow-hidden bg-white mb-3 relative">
+                  <img alt="Staff &amp; Route Bus"
+                    class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-200"
+                    src="img/menu-staff-bus.png" />
+
+                </div>
+                <div
+                  class="font-bold text-sm text-on-surface group-hover/item:text-secondary flex items-center justify-center">
+                  <span class="">Staff &amp; Route Bus</span>
+                  <span
+                    class="material-symbols-outlined text-sm opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-0.5 transition-all">arrow_forward</span>
+                </div>
+              </a>
+              <!-- Item 3: Ambulance & Healthcare -->
+              <a class="group/item flex flex-col hover:border-outline-variant/40 p-2.5 transition-colors"
+                href="ambulances.html">
+                <div class="h-28 w-full rounded overflow-hidden bg-white mb-3 relative">
+                  <img alt="Ambulance &amp; Healthcare"
+                    class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-200"
+                    src="img/ambulances-menu.png" />
+                </div>
+                <div
+                  class="font-bold text-sm text-on-surface group-hover/item:text-secondary flex items-center justify-center">
+                  <span class="">Ambulance &amp; Healthcare</span>
+                  <span
+                    class="material-symbols-outlined text-sm opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-0.5 transition-all">arrow_forward</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a class="relative py-1 text-on-surface-variant font-medium text-sm hover:text-on-surface transition-colors duration-200 group"
+          href="after-sales.html">
+          <span class="">After Sales</span>
+          <span
+            class="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary transition-all duration-300 ease-out group-hover:w-full"></span>
+        </a>
+        <!-- <a class="text-on-surface-variant dark:text-chrome-metallic font-medium transition-colors hover:text-secondary dark:hover:text-secondary-fixed text-label-lg font-label-lg"
+          href="#">Faq</a> -->
+
+        <a class="relative py-1 text-on-surface-variant font-medium text-sm hover:text-on-surface transition-colors duration-200 group"
+          href="contact-us.html">
+          <span class="">Contact Us</span>
+          <span
+            class="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary transition-all duration-300 ease-out group-hover:w-full"></span>
+        </a>
+
+      </div>
+      <!-- Trailing Action -->
+      <div class="hidden sm:flex items-center space-x-3">
+        <a class="px-5 py-2.5 bg-black hover:bg-slate-800 text-surface-container-lowest text-label-md font-label-md uppercase tracking-wider rounded-lg border border-primary-container transition-all active:scale-[0.99] flex items-center gap-2 shadow-sm"
+          href="contact-us.html">
+          <span>Request RFQ</span>
+          <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+        </a>
+        <!-- <a class="p-2.5 text-on-surface-variant hover:text-secondary rounded-lg border border-subtle-border hover:bg-slate-surface transition-colors"
+          href="#contact" title="Contact Sales">
+          <span class="material-symbols-outlined" data-icon="call">call</span>
+        </a> -->
+        <a class="p-3 text-on-surface-variant hover:text-emerald-500 rounded-lg border border-subtle-border hover:bg-slate-surface transition-colors inline-flex items-center justify-center"
+          href="https://wa.me/919644900005" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.73 7.34C8.54 7.34 8.24 7.41 7.99 7.68C7.74 7.95 7.03 8.62 7.03 9.97C7.03 11.32 8.01 12.63 8.15 12.82C8.29 13.01 10.08 15.77 12.82 16.95C13.47 17.23 13.98 17.41 14.38 17.53C15.04 17.74 15.64 17.71 16.11 17.64C16.64 17.56 17.74 16.97 17.97 16.32C18.2 15.67 18.2 15.11 18.13 14.99C18.06 14.87 17.88 14.81 17.6 14.67C17.32 14.53 15.96 13.86 15.71 13.77C15.46 13.68 15.27 13.63 15.09 13.91C14.9 14.19 14.37 14.81 14.21 15C14.05 15.19 13.89 15.21 13.61 15.07C13.33 14.93 12.44 14.64 11.38 13.69C10.56 12.95 10 12.04 9.84 11.77C9.68 11.49 9.82 11.34 9.96 11.2C10.09 11.07 10.25 10.86 10.39 10.7C10.53 10.54 10.58 10.42 10.67 10.24C10.76 10.05 10.72 9.89 10.65 9.75C10.58 9.61 10.03 8.25 9.8 7.69C9.57 7.15 9.34 7.22 9.17 7.21C9.01 7.21 8.82 7.21 8.64 7.21L8.73 7.34Z">
+            </path>
+          </svg>
+        </a>
+
+      </div>
+      <!-----=======------------ Mobile Menu Button ------------=========----------->
+      <!-- <button aria-label="Toggle navigation"
+        class="lg:hidden p-2 text-on-surface hover:text-secondary focus:outline-none" id="mobileMenuBtn">
+        <span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+      </button> -->
+      <!-- Mobile Hamburger Button -->
+      <button id="menu-btn" aria-label="Open Menu" class="md:hidden p-2 text-slate-900 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Navigation Dropdown -->
+
+    <div id="mobile-menu-container"
+      class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-300 opacity-0">
+      <!-- Backdrop -->
+      <div id="menu-backdrop" class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"></div>
+
+      <!-- Sliding Panel (From Left) -->
+      <div id="menu-panel"
+        class="absolute top-0 left-0 h-full w-4/5 max-w-sm bg-white shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+
+        <!-- Drawer Header -->
+        <div class="px-3 py-6 border-b border-slate-100 flex items-center justify-between">
+          <span>
+            <a class="flex items-center gap-3 group" href="index.html">
+              <div
+                class="w-10 h-10 rounded-xl flex items-center justify-center text-white font-heading font-black text-xl transition-transform">
+                <img src="img/sks-logo.png">
+              </div>
+              <div class="flex flex-col relative">
+                <span class="font-heading font-black tracking-tight flex items-center text-[#000] leading-none">
+                  SKS Automotive<span class="text-[#C1C7CD]">.</span>
+                </span>
+                <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold mt-1">SANATAN
+                  GROUP</span>
+              </div>
+            </a>
+          </span>
+          <button id="menu-close-btn" aria-label="Close Menu"
+            class="p-2 text-white hover:text-slate-900 absolute top-6 -right-10">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Drawer Navigation Links -->
+        <div class="flex flex-col space-y-1">
+
+          <a class="flex items-center px-4 py-3.5 rounded-lg text-base font-semibold tracking-tight text-on-surface hover:text-secondary hover:bg-slate-surface transition-colors"
+            href="index.html">Home</a>
+
+          <a class="flex items-center px-4 py-3.5 rounded-lg text-base font-semibold tracking-tight text-on-surface hover:text-secondary hover:bg-slate-surface transition-colors"
+            href="aboutus.html">About Us</a>
+          <a class="flex items-center px-4 py-3.5 rounded-lg text-base font-semibold tracking-tight text-on-surface hover:text-secondary hover:bg-slate-surface transition-colors"
+            href="product-facilities.html">Product Facilities</a>
+
+          <div>
+            <button type="button"
+              onclick="const sub = document.getElementById('mobileProductsSubmenu'); const chev = document.getElementById('mobileProductsChevron'); if (sub.classList.contains('grid-rows-[0fr]')) { sub.classList.remove('grid-rows-[0fr]', 'opacity-0'); sub.classList.add('grid-rows-[1fr]', 'opacity-100'); chev.classList.add('rotate-180'); } else { sub.classList.add('grid-rows-[0fr]', 'opacity-0'); sub.classList.remove('grid-rows-[1fr]', 'opacity-100'); chev.classList.remove('rotate-180'); }"
+              class="w-full flex items-center justify-between px-4 py-3.5 rounded-lg text-left text-base font-semibold tracking-tight text-on-surface hover:text-secondary hover:bg-slate-surface transition-colors focus:outline-none">
+              <span class="font-medium">Products</span>
+              <span id="mobileProductsChevron"
+                class="material-symbols-outlined text-lg transition-transform duration-300"
+                data-icon="expand_more">expand_more</span>
+            </button>
+            <div id="mobileProductsSubmenu"
+              class="grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out">
+              <div class="overflow-hidden pl-4 border-l-2 border-subtle-border/60 ml-1 space-y-2">
+                <a class="block text-body-sm text-on-surface-variant hover:text-secondary py-1 pt-2 transition-colors"
+                  href="staff-buses.html">Staff &amp; Route Buses</a>
+                <a class="block text-body-sm text-on-surface-variant hover:text-secondary py-1 transition-colors"
+                  href="ambulances.html">Ambulances</a>
+                <a class="block text-body-sm text-on-surface-variant hover:text-secondary py-1 pb-2transition-colors"
+                  href="school-buses.html">School Buses</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <a class="flex items-center px-4 py-3.5 rounded-lg text-base font-semibold tracking-tight text-on-surface hover:text-secondary hover:bg-slate-surface transition-colors"
+            href="#leadership">After Sales</a>
+          <a class="flex items-center px-4 py-3.5 rounded-lg text-base font-semibold tracking-tight text-on-surface hover:text-secondary hover:bg-slate-surface transition-colors"
+            href="contactus.html">Contact Us</a>
+        </div>
+
+        <!-- Drawer Footer CTA -->
+        <div class="pt-5 mt-4 border-t border-subtle-border px-2">
+          <a class="w-full flex items-center justify-center py-2.5 px-2 bg-black text-white rounded-lg font-semibold text-base shadow-sm hover:bg-slate-800 transition-colors tracking-wide"
+            href="contact.html">Request RFQ</a>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    <!-- Mobile Menu Interactivity Script -->
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const closeBtn = document.getElementById('menu-close-btn');
+      const backdrop = document.getElementById('menu-backdrop');
+      const container = document.getElementById('mobile-menu-container');
+      const panel = document.getElementById('menu-panel');
+
+      function openMenu() {
+        container.classList.remove('pointer-events-none', 'opacity-0');
+        container.classList.add('opacity-100');
+        panel.classList.remove('-translate-x-full');
+        panel.classList.add('translate-x-0');
+      }
+
+      function closeMenu() {
+        container.classList.remove('opacity-100');
+        container.classList.add('opacity-0');
+        panel.classList.remove('translate-x-0');
+        panel.classList.add('-translate-x-full');
+        setTimeout(() => {
+          container.classList.add('pointer-events-none');
+        }, 300); // matches transition duration
+      }
+
+      menuBtn.addEventListener('click', openMenu);
+      closeBtn.addEventListener('click', closeMenu);
+      backdrop.addEventListener('click', closeMenu);
+    </script>
+  </nav>
+
+
+  <!-- ========================================================================= -->
+  <!-- 2. Portfolio Hero Banner & Filter Bar -->
+  <!-- ========================================================================= -->
+  <nav aria-label="Breadcrumb" class="bg-surface-container-low border-b border-subtle-border py-2.5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <ol class="flex items-center space-x-2 text-xs font-label-md">
+        <li class="inline-flex items-center">
+          <a class="inline-flex items-center gap-1 text-on-surface-variant hover:text-secondary transition-colors duration-150"
+            href="#">
+            <span class="material-symbols-outlined text-base" data-icon="home">home</span>
+            <span class="">Home</span>
+          </a>
+        </li>
+        <li class="inline-flex items-center text-chrome-metallic">
+          <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+        </li>
+        <li class="inline-flex items-center">
+          <a class="text-on-surface-variant hover:text-secondary transition-colors duration-150" href="#">
+            Products
+          </a>
+        </li>
+        <li class="inline-flex items-center text-chrome-metallic">
+          <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+        </li>
+        <li aria-current="page" class="inline-flex items-center text-on-surface font-semibold">
+          <span class="">Staff & Route Buses</span>
+        </li>
+      </ol>
+    </div>
+  </nav>
+  <section class="relative bg-black text-on-primary py-16 lg:py-24 border-b border-subtle-border overflow-hidden">
+    <!-- Subtle technical grid background -->
+    <div
+      class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#3a475c_1px,transparent_1px),linear-gradient(to_bottom,#3a475c_1px,transparent_1px)] bg-[size:32px_32px]">
+    </div>
+    <div class="relative max-w-8xl mx-auto px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- <div
+          class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-secondary/20 border border-secondary/40 text-secondary-fixed mb-4">
+          <span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+          <span class="font-label-sm text-label-sm uppercase tracking-wider">CMVR &amp; AIS-052 Certified Bus Body
+            Builder</span>
+        </div> -->
+        <h1
+          class="font-display-hero text-headline-xl lg:text-display-hero font-extrabold tracking-wide text-white mb-6">
+          Integrated Fleet Solutions: Passenger & Emergency Mobility.
+        </h1>
+        <p class="font-body-lg text-body-lg text-chrome-metallic mb-8 max-w-2xl mx-auto">
+          Turnkey fabrication capacity delivering both institutional passenger transport and critical emergency care units under one roof.
+        </p>
+        <div class="relative w-full mx-auto px-4 pt-12">
+            <div class="">
+                <div class="relative">
+                    
+                    <ul class="m-0 pb-[280px] max-md:pb-[180px] list-none flex flex-wrap w-full scale-[1.6] max-md:scale-[0.85] h-full" style="margin: 0 auto; max-width: 1130px;">
+                        
+                      
+                        
+                        <li class="relative w-full z-[2]">
+                            <img decoding="async" data-aos="zoom-in-left" data-aos-delay="1600" data-aos-duration="1000" src="img/bus-product/home-strip-03.png" alt="vehicle" class="aos-init absolute mx-auto left-[103px] top-[59px] w-[169px] right-auto">
+                        </li>
+                        
+                        <li class="relative w-full z-[3]">
+                            <img decoding="async" data-aos="zoom-in-left" data-aos-delay="1200" data-aos-duration="1000" src="img/bus-product/home-strip-04.png" alt="vehicle" class="aos-init absolute mx-auto left-[205px] top-[46px] right-auto w-[185px]">
+                        </li>
+                        
+                        
+                        
+                        <li class="relative w-full z-[9]">
+                            <img decoding="async" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000" src="img/bus-product/home-strip-05.png" alt="vehicle" class="aos-init absolute mx-auto right-0 top-[14px] left-[-17px] w-[220px]">
+                        </li>
+                        
+                        
+                        
+                        <li class="relative w-full z-[3]">
+                            <img decoding="async" data-aos="zoom-in-right" data-aos-delay="1200" data-aos-duration="1000" src="img/bus-product/home-strip-07.png" alt="vehicle" class="aos-init absolute mx-auto right-[204px] top-[49px] left-auto w-[168px]">
+                        </li>
+                        
+                        <li class="relative w-full z-[2]">
+                            <img decoding="async" data-aos="zoom-in-right" data-aos-delay="1600" data-aos-duration="1000" src="img/bus-product/home-strip-06.png" alt="vehicle" class="aos-init absolute mx-auto right-[103px] top-[49px] w-[155px] left-auto">
+                        </li>
+                        
+                       
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Stat Highlights -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 border-t border-primary-container/80">
+          <div>
+            <div class="font-headline-md text-headline-md font-bold text-white">4,200+</div>
+            <div class="font-label-sm text-label-sm text-chrome-metallic uppercase tracking-wider">Buses Fabricated
+            </div>
+          </div>
+          <div>
+            <div class="font-headline-md text-headline-md font-bold text-white">100%</div>
+            <div class="font-label-sm text-label-sm text-chrome-metallic uppercase tracking-wider">ARAI Compliant</div>
+          </div>
+          <div>
+            <div class="font-headline-md text-headline-md font-bold text-white">32 to 56</div>
+            <div class="font-label-sm text-label-sm text-chrome-metallic uppercase tracking-wider">Seater Capacities
+            </div>
+          </div>
+          <div>
+            <div class="font-headline-md text-headline-md font-bold text-white">Grade A</div>
+            <div class="font-label-sm text-label-sm text-chrome-metallic uppercase tracking-wider">Tata Motors OEM
+              Partner</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Quick Filter Sticky/Pinned Bar -->
+  <!-- <div class="bg-surface-container-lowest border-b border-subtle-border shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center space-x-2 py-3 overflow-x-auto custom-scrollbar" id="categoryFilterBar">
+        <button
+          class="filter-btn active px-4 py-2 rounded text-label-md font-label-md bg-black text-on-primary font-semibold whitespace-nowrap transition-all"
+          data-category="all">
+          All Categories
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded text-label-md font-label-md bg-slate-surface text-on-surface-variant hover:bg-surface-container hover:text-secondary border border-subtle-border whitespace-nowrap transition-all"
+          data-category="school">
+          School Buses (AIS-063)
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded text-label-md font-label-md bg-slate-surface text-on-surface-variant hover:bg-surface-container hover:text-secondary border border-subtle-border whitespace-nowrap transition-all"
+          data-category="route">
+          Route &amp; Staff Buses
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded text-label-md font-label-md bg-slate-surface text-on-surface-variant hover:bg-surface-container hover:text-secondary border border-subtle-border whitespace-nowrap transition-all"
+          data-category="luxury">
+          Luxury Coaches
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded text-label-md font-label-md bg-slate-surface text-on-surface-variant hover:bg-surface-container hover:text-secondary border border-subtle-border whitespace-nowrap transition-all"
+          data-category="ambulance">
+          Medical Ambulances (BLS/ALS)
+        </button>
+        <button
+          class="filter-btn px-4 py-2 rounded text-label-md font-label-md bg-slate-surface text-on-surface-variant hover:bg-surface-container hover:text-secondary border border-subtle-border whitespace-nowrap transition-all"
+          data-category="diagnostic">
+          Mobile Medical Units
+        </button>
+      </div>
+    </div>
+  </div> -->
+  <!-- ========================================================================= -->
+  <!-- 3. Detailed Product Folio Showcase (Card Matrix) -->
+  <!-- ========================================================================= -->
+  <section class="py-16 max-w-7xl mx-auto px-6 lg:px-8 my-16">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-subtle-border">
+      <div>
+        <div class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1">Production Folio
+        </div>
+        <h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Precision Commercial Vehicle Lineup</h2>
+      </div>
+      <p class="font-body-md text-body-md text-on-surface-variant mt-2 md:mt-0 max-w-md">
+        Designed with high-tensile galvanized tubular steel, anti-corrosive electrophoretic coating, and certified fire
+        safety provisions.
+      </p>
+    </div>
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16" id="productCardGrid">
+        <!-- bus 1: Staff & Route Bus -->
+        <div
+          class="folio-busesd tatafp staff buses rounded-xl bg-surface-container-lowest border border-subtle-border overflow-hidden hover:shadow-lg transition-all group flex flex-col"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+          <div class="relative h-56 w-full overflow-hidden bg-slate-900">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="A 40-seater TATA LP commercial staff coach and route bus parked outside a modern transport terminal on a sunny day. Pristine aerodynamic styling, bright LED headlights, panoramic passenger windows, and a metallic clean finish reflecting light."
+              src="img/02.png" />
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2 py-0.5 bg-black/90 text-white font-label-sm rounded text-[10px]">TATA 1512 /
+                1618</span>
+              <span class="px-2 py-0.5 bg-secondary text-white font-label-sm rounded text-[10px]">Type-II ARAI</span>
+            </div>
+            <div
+              class="absolute bottom-3 right-3 px-2 py-1 bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm rounded text-[11px] font-bold">
+              Route Bus 32 - 54 Seater
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-headline-sm text-lg font-bold text-on-surface">TATA 3600 Route Bus &amp; Staff Coach</h3>
+              <p class="text-body-sm text-on-surface-variant mt-2">
+                The TATA 3600 WB Route Bus & Staff Coach is engineered to meet the demanding requirements of corporate campuses, BPO fleets, and municipal route lines.
+              </p>
+              <!-- Micro Specs -->
+              <div class="mt-4 pt-3 border-t border-subtle-border grid grid-cols-2 gap-2 text-xs">
+                <span class="text-on-surface-variant flex items-center gap-1">
+                  <span class="material-symbols-outlined text-sm text-secondary"
+                    data-icon="airline_seat_recline_normal">airline_seat_recline_normal</span>
+                  2x2 / 3x2 High-Back
+                </span>
+                <span class="text-on-surface-variant flex items-center gap-1">
+                  <span class="material-symbols-outlined text-sm text-secondary" data-icon="ac_unit">ac_unit</span>
+                  Integrated AC ducting
+                </span>
+              </div>
+            </div>
+            <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
+              <div class="flex items-center justify-between text-xs text-on-surface-variant">
+                <span class="">Chassis: Tata 407 / Mitr</span>
+                <span class="font-mono text-[11px] text-red-700 font-semibold">Type-D ARAI</span>
+              </div>
+              <div class="flex items-center gap-2 pt-1">
+                <a class="flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
+                  href="tata-3600-route-staff-bus.html">
+                  <span class="">Know More</span>
+                  <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
+                    data-icon="arrow_forward">arrow_forward</span>
+                </a>
+                <a class="py-1 px-3 bg-secondary hover:bg-slate-800 text-white rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 shadow-sm group/rfq active:scale-95"
+                  href="contact-us.html">
+                  <span class="">Request RFQ</span>
+                  <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bus 2: Staff & Route Bus -->
+        <div
+          class="folio-busesd tatafp staff buses rounded-xl bg-surface-container-lowest border border-subtle-border overflow-hidden hover:shadow-lg transition-all group flex flex-col"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+          <div class="relative h-56 w-full overflow-hidden bg-slate-900">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="A 40-seater TATA LP commercial staff coach and route bus parked outside a modern transport terminal on a sunny day. Pristine aerodynamic styling, bright LED headlights, panoramic passenger windows, and a metallic clean finish reflecting light."
+              src="img/02.png" />
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2 py-0.5 bg-black/90 text-white font-label-sm rounded text-[10px]">TATA 1512 /
+                1618</span>
+              <span class="px-2 py-0.5 bg-secondary text-white font-label-sm rounded text-[10px]">Type-II ARAI</span>
+            </div>
+            <div
+              class="absolute bottom-3 right-3 px-2 py-1 bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm rounded text-[11px] font-bold">
+              Route Bus 32 - 54 Seater
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-headline-sm text-lg font-bold text-on-surface">TATA 4500 Route Bus &amp; Staff Coach</h3>
+              <p class="text-body-sm text-on-surface-variant mt-2">
+                Built on heavy-duty TATA LP platforms. Designed for intercity shuttles, IT staff mobility, and state
+                transit routes with anti-vibration rubber mounted floors.
+              </p>
+              <!-- Micro Specs -->
+              <div class="mt-4 pt-3 border-t border-subtle-border grid grid-cols-2 gap-2 text-xs">
+                <span class="text-on-surface-variant flex items-center gap-1">
+                  <span class="material-symbols-outlined text-sm text-secondary"
+                    data-icon="airline_seat_recline_normal">airline_seat_recline_normal</span>
+                  2x2 / 3x2 High-Back
+                </span>
+                <span class="text-on-surface-variant flex items-center gap-1">
+                  <span class="material-symbols-outlined text-sm text-secondary" data-icon="ac_unit">ac_unit</span>
+                  Integrated AC ducting
+                </span>
+              </div>
+            </div>
+            <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
+              <div class="flex items-center justify-between text-xs text-on-surface-variant">
+                <span class="">Chassis: Tata 407 / Mitr</span>
+                <span class="font-mono text-[11px] text-red-700 font-semibold">Type-D ARAI</span>
+              </div>
+              <div class="flex items-center gap-2 pt-1">
+                <a class="flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
+                  href="tata-4500-route-staff-bus.html">
+                  <span class="">Know More</span>
+                  <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
+                    data-icon="arrow_forward">arrow_forward</span>
+                </a>
+                <a class="py-1 px-3 bg-secondary hover:bg-slate-800 text-white rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 shadow-sm group/rfq active:scale-95"
+                  href="contact-us.html">
+                  <span class="">Request RFQ</span>
+                  <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bus 3: Staff & Route Bus -->
+        <div
+          class="folio-busesd tatafp staff buses rounded-xl bg-surface-container-lowest border border-subtle-border overflow-hidden hover:shadow-lg transition-all group flex flex-col"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+          <div class="relative h-56 w-full overflow-hidden bg-slate-900">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="A 40-seater TATA LP commercial staff coach and route bus parked outside a modern transport terminal on a sunny day. Pristine aerodynamic styling, bright LED headlights, panoramic passenger windows, and a metallic clean finish reflecting light."
+              src="img/02.png" />
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2 py-0.5 bg-black/90 text-white font-label-sm rounded text-[10px]">TATA 1512 /
+                1618</span>
+              <span class="px-2 py-0.5 bg-secondary text-white font-label-sm rounded text-[10px]">Type-II ARAI</span>
+            </div>
+            <div
+              class="absolute bottom-3 right-3 px-2 py-1 bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm rounded text-[11px] font-bold">
+              Route Bus 32 - 54 Seater
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-headline-sm text-lg font-bold text-on-surface">TATA 5200 Route Bus &amp; Staff Coach</h3>
+              <p class="text-body-sm text-on-surface-variant mt-2">
+                Built on heavy-duty TATA LP platforms. Designed for intercity shuttles, IT staff mobility, and state
+                transit routes with anti-vibration rubber mounted floors.
+              </p>
+              <!-- Micro Specs -->
+              <div class="mt-4 pt-3 border-t border-subtle-border grid grid-cols-2 gap-2 text-xs">
+                <span class="text-on-surface-variant flex items-center gap-1">
+                  <span class="material-symbols-outlined text-sm text-secondary"
+                    data-icon="airline_seat_recline_normal">airline_seat_recline_normal</span>
+                  2x2 / 3x2 High-Back
+                </span>
+                <span class="text-on-surface-variant flex items-center gap-1">
+                  <span class="material-symbols-outlined text-sm text-secondary" data-icon="ac_unit">ac_unit</span>
+                  Integrated AC ducting
+                </span>
+              </div>
+            </div>
+            <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
+              <div class="flex items-center justify-between text-xs text-on-surface-variant">
+                <span class="">Chassis: Tata 407 / Mitr</span>
+                <span class="font-mono text-[11px] text-red-700 font-semibold">Type-D ARAI</span>
+              </div>
+              <div class="flex items-center gap-2 pt-1">
+                <a class="flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
+                  href="tata-5200-route-staff-bus.html">
+                  <span class="">Know More</span>
+                  <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
+                    data-icon="arrow_forward">arrow_forward</span>
+                </a>
+                <a class="py-1 px-3 bg-secondary hover:bg-slate-800 text-white rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 shadow-sm group/rfq active:scale-95"
+                  href="contact-us.html">
+                  <span class="">Request RFQ</span>
+                  <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+    </div>
+  </section>
+ <section class="py-20 bg-black text-white relative overflow-hidden border-t border-white/10" id="rfq">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+      <div class="bg-gradient-to-r from-chassis-card to-chassis-dark border border-white/15 rounded-2xl p-8 lg:p-14 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/10 text-xs font-mono text-chrome-metallic">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              DIRECT INSTITUTIONAL INQUIRIES &amp; FLEET ORDERS
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Ready to Upgrade Your Commercial Fleet?
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl">
+              Connect directly with our engineering division at Village Jakhya, Indore. Whether you require custom
+              luxury coaches, school transit bodies, or turnkey mobile ICU units on Tata Motors chassis, our estimators
+              provide fast technical blueprints and RFQs.
+            </p>
+            <div class="flex flex-wrap gap-6 pt-2 font-mono text-xs text-slate-300">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-base text-emerald-400" data-icon="location_on">location_on</span>
+                <span class="">Village Jakhya, Sanwer Road, Indore (M.P.)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-base text-emerald-400" data-icon="call">call</span>
+                <span class="">+91 98260 23450 / 51</span>
+              </div>
+            </div>
+          </div>
+          <!-- Quick RFQ Form Component -->
+          <div class="lg:col-span-5 bg-white text-on-surface p-6 sm:p-8 rounded-xl shadow-lg border border-subtle-border" id="contact">
+            <h3 class="font-bold text-lg text-on-surface mb-1">Request Technical Spec &amp; RFQ</h3>
+            <p class="text-xs text-secondary mb-4">Our chief engineer will respond within 24 working hours.</p>
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('RFQ Request Received. SKS Engineering division will contact you with CAD blueprints.');">
+              <div>
+                <label class="block text-xs font-mono text-on-surface-variant uppercase tracking-wider mb-1">Fleet Buyer
+                  Name / Org</label>
+                <input class="w-full text-sm px-3.5 py-2.5 rounded bg-surface border border-slate-300 focus:outline-none focus:ring-2 focus:ring-secondary" placeholder="e.g. State Transport / School Trust" required="" type="text">
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-mono text-on-surface-variant uppercase tracking-wider mb-1">Official
+                    Mobile</label>
+                  <input class="w-full text-sm px-3.5 py-2.5 rounded bg-surface border border-slate-300 focus:outline-none focus:ring-2 focus:ring-secondary" placeholder="+91 XXXXX XXXXX" required="" type="tel">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-on-surface-variant uppercase tracking-wider mb-1">Chassis
+                    Model</label>
+                  <select class="w-full text-sm px-3.5 py-2.5 rounded bg-surface border border-slate-300 focus:outline-none focus:ring-2 focus:ring-secondary">
+                    <option>Tata LPO 1618</option>
+                    <option>Tata Winger (ICU/BLS)</option>
+                    <option>Tata Ultra Coach</option>
+                    <option>Other Chassis Platform</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-mono text-on-surface-variant uppercase tracking-wider mb-1">Application
+                  Type</label>
+                <select class="w-full text-sm px-3.5 py-2.5 rounded bg-surface border border-slate-300 focus:outline-none focus:ring-2 focus:ring-secondary">
+                  <option>Luxury Intercity Passenger Coach</option>
+                  <option>AIS-063 Compliant School Bus</option>
+                  <option>Type-C Advanced Mobile ICU Ambulance</option>
+                  <option>State Police / Defense Specialized Troop Carrier</option>
+                  <option>Custom Defense / Research Laboratory</option>
+                </select>
+              </div>
+              <button class="w-full py-3 px-4 rounded bg-on-background hover:bg-black text-white font-semibold text-sm transition-all shadow-md active:scale-[0.99] flex items-center justify-center gap-2" type="submit">
+                <span class="">Submit Blueprint &amp; RFQ Request</span>
+                <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="faq-main-heading" class="w-full bg-white py-16 sm:py-24 lg:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 xl:px-16">
+      <!-- Two-column grid container -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-24 items-start">
+        <!-- BEGIN: LeftInfoColumn -->
+        <div class="lg:col-span-5 flex flex-col items-start pr-0 lg:pr-4" data-purpose="intro-column">
+          <!-- Section Eyebrow -->
+          <span class="inline-block rounded-md text-secondary font-semibold text-sm uppercase mb-3 aos-init aos-animate"
+            data-aos="fade-up" data-aos-duration="900">
+            Our FAQ
+          </span>
+          <!-- Main Section Title -->
+          <h2
+            class="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-charcoal tracking-normal leading-[1.12] mb-6 aos-init aos-animate"
+            id="faq-main-heading" data-aos="fade-up" data-aos-duration="900" data-aos-delay="50">
+            Frequently<br class="hidden sm:inline"> Asked Questions
+          </h2>
+          <!-- Introductory Paragraph -->
+          <p class="text-gray-500 text-sm sm:text-base leading-relaxed font-normal mb-8 sm:mb-10 max-w-md aos-init aos-animate"
+            data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+            Lorem ipsum dolor sit amet consectetur. Integer blandit neque congue magna felis tristique dolor. Dictum
+            tellus leo lacus vitae dolor tortor diam massa.
+          </p>
+          <!-- Call to Action Button -->
+          <a class="px-7 py-3.5 bg-black hover:bg-slate-800 text-surface-container-lowest text-label-md font-label-md uppercase tracking-wider rounded-lg border border-primary-container transition-all active:scale-[0.99] flex items-center gap-2 shadow-sm aos-init aos-animate"
+            href="faq.html" data-aos="fade-up" data-aos-duration="900" data-aos-delay="150">
+            <span>Read More</span>
+            <!-- Small play/triangle right indicator icon -->
+            <svg aria-hidden="true"
+              class="w-3 h-3 fill-current transition-transform duration-200 group-hover:translate-x-0.5"
+              viewBox="0 0 16 16">
+              <path d="M4.5 3.5v9l8-4.5-8-4.5z"></path>
+            </svg>
+          </a>
+        </div>
+        <!-- END: LeftInfoColumn -->
+        <!-- BEGIN: RightAccordionColumn -->
+        <div class="lg:col-span-7 flex flex-col divide-y divide-gray-200/90 aos-init aos-animate"
+          data-purpose="accordion-group" data-aos="fade-up" data-aos-duration="900">
+          <!-- FAQ Item 1 -->
+          <div class="accordion-item border-t border-gray-200/90 aos-init aos-animate" data-aos="fade-up"
+            data-aos-duration="900" data-purpose="faq-item" data-aos-delay="50">
+            <h3>
+              <button aria-controls="faq-answer-1" aria-expanded="false"
+                class="accordion-trigger w-full py-3 sm:py-3 flex items-center justify-between text-left focus:outline-none group"
+                id="faq-header-1" type="button">
+                <span
+                  class="text-sm sm:text-base font-bold text-charcoal tracking-wide uppercase pr-6 group-hover:text-brand-orange transition-colors duration-150">
+                  What are the benefits of buying a pre-owned buses?
+                </span>
+                <span aria-hidden="true"
+                  class="accordion-icon flex-shrink-0 ml-2 text-xl font-medium text-charcoal group-hover:text-brand-orange">
+                  +
+                </span>
+              </button>
+            </h3>
+            <div aria-labelledby="faq-header-1" class="accordion-content" id="faq-answer-1" role="region">
+              <div class="accordion-inner pb-6">
+                <p class="text-sm text-gray-500 leading-relaxed font-normal">
+                  Purchasing a pre-owned vehicle avoids significant initial depreciation, provides lower insurance
+                  premiums, and allows you to access premium trims, enhanced safety technologies, and verified
+                  reliability reports at a substantially lower price point.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- FAQ Item 2 -->
+          <div class="accordion-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="900"
+            data-purpose="faq-item" data-aos-delay="100">
+            <h3>
+              <button aria-controls="faq-answer-2" aria-expanded="false"
+                class="accordion-trigger w-full py-3 sm:py-3 flex items-center justify-between text-left focus:outline-none group"
+                id="faq-header-2" type="button">
+                <span
+                  class="text-sm sm:text-base font-bold text-charcoal tracking-wide uppercase pr-6 group-hover:text-brand-orange transition-colors duration-150">
+                  Are the pre-owned buses inspected?
+                </span>
+                <span aria-hidden="true"
+                  class="accordion-icon flex-shrink-0 ml-2 text-xl font-medium text-charcoal group-hover:text-brand-orange">
+                  +
+                </span>
+              </button>
+            </h3>
+            <div aria-labelledby="faq-header-2" class="accordion-content" id="faq-answer-2" role="region">
+              <div class="accordion-inner pb-6">
+                <p class="text-sm text-gray-500 leading-relaxed font-normal">
+                  Yes, each buses undergoes an exhaustive 150-point mechanical, structural, and computer diagnostic
+                  inspection conducted by certified master technicians to guarantee peak road safety and optimum
+                  condition.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- FAQ Item 3 -->
+          <div class="accordion-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="900"
+            data-purpose="faq-item" data-aos-delay="150">
+            <h3>
+              <button aria-controls="faq-answer-3" aria-expanded="false"
+                class="accordion-trigger w-full py-3 sm:py-3 flex items-center justify-between text-left focus:outline-none group"
+                id="faq-header-3" type="button">
+                <span
+                  class="text-sm sm:text-base font-bold text-charcoal tracking-wide uppercase pr-6 group-hover:text-brand-orange transition-colors duration-150">
+                  Is there a warranty on the pre-owned buses?
+                </span>
+                <span aria-hidden="true"
+                  class="accordion-icon flex-shrink-0 ml-2 text-xl font-medium text-charcoal group-hover:text-brand-orange">
+                  +
+                </span>
+              </button>
+            </h3>
+            <div aria-labelledby="faq-header-3" class="accordion-content" id="faq-answer-3" role="region">
+              <div class="accordion-inner pb-6">
+                <p class="text-sm text-gray-500 leading-relaxed font-normal">
+                  Every certified pre-owned automobile comes with a comprehensive standard limited warranty, including
+                  24/7 roadside assistance, with flexible options to extend coverage up to 5 years or 100,000 miles.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- FAQ Item 4 -->
+          <div class="accordion-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="900"
+            data-purpose="faq-item" data-aos-delay="200">
+            <h3>
+              <button aria-controls="faq-answer-4" aria-expanded="false"
+                class="accordion-trigger w-full py-3 sm:py-3 flex items-center justify-between text-left focus:outline-none group"
+                id="faq-header-4" type="button">
+                <span
+                  class="text-sm sm:text-base font-bold text-charcoal tracking-wide uppercase pr-6 group-hover:text-brand-orange transition-colors duration-150">
+                  How do I know the history of the buses?
+                </span>
+                <span aria-hidden="true"
+                  class="accordion-icon flex-shrink-0 ml-2 text-xl font-medium text-charcoal group-hover:text-brand-orange">
+                  +
+                </span>
+              </button>
+            </h3>
+            <div aria-labelledby="faq-header-4" class="accordion-content" id="faq-answer-4" role="region">
+              <div class="accordion-inner pb-6">
+                <p class="text-sm text-gray-500 leading-relaxed font-normal">
+                  We supply complimentary busesFAX® or AutoCheck® vehicle history reports for all inventory items,
+                  detailing past ownership, maintenance timelines, accident history, and title certification.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- FAQ Item 5 -->
+          <div class="accordion-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="900"
+            data-purpose="faq-item" data-aos-delay="250">
+            <h3>
+              <button aria-controls="faq-answer-5" aria-expanded="false"
+                class="accordion-trigger w-full py-3 sm:py-3 flex items-center justify-between text-left focus:outline-none group"
+                id="faq-header-5" type="button">
+                <span
+                  class="text-sm sm:text-base font-bold text-charcoal tracking-wide uppercase pr-6 group-hover:text-brand-orange transition-colors duration-150">
+                  Do you offer test drives?
+                </span>
+                <span aria-hidden="true"
+                  class="accordion-icon flex-shrink-0 ml-2 text-xl font-medium text-charcoal group-hover:text-brand-orange">
+                  +
+                </span>
+              </button>
+            </h3>
+            <div aria-labelledby="faq-header-5" class="accordion-content" id="faq-answer-5" role="region">
+              <div class="accordion-inner pb-6">
+                <p class="text-sm text-gray-500 leading-relaxed font-normal">
+                  Absolutely. You can schedule a hassle-free, no-obligation test drive online or by speaking with one of
+                  our buses advisors. We also offer doorstep test drives within a 25-mile radius.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END: RightAccordionColumn -->
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer (Shared Component) -->
+   <footer class="text-on-primary border-t border-primary-container bg-dark-textured bg-black" id="contact">
+    <div class="max-w-7xl mx-auto  pt-16 px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <!-- Credential 1 -->
+        <div
+          class="flex items-center gap-4 p-4 rounded-lg bg-surface-container-lowest border border-subtle-border shadow-sm"
+          data-aos="fade-up" data-aos-duration="900">
+          <div
+            class="w-12 h-12 rounded bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-700">
+            <span class="material-symbols-outlined text-2xl" data-icon="verified_user">verified_user</span>
+          </div>
+          <div>
+            <div class="text-label-md font-bold text-on-surface">ARAI Certified Body Builder</div>
+            <div class="text-body-sm text-on-surface-variant">Full compliance with AIS-052 Rev. 1 &amp; AIS-063</div>
+          </div>
+        </div>
+        <!-- Credential 2 -->
+        <div
+          class="flex items-center gap-4 p-4 rounded-lg bg-surface-container-lowest border border-subtle-border shadow-sm"
+          data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+          <div
+            class="w-12 h-12 rounded bg-black-50 border border-black-200 flex items-center justify-center text-secondary">
+            <span class="material-symbols-outlined text-2xl" data-icon="workspace_premium">workspace_premium</span>
+          </div>
+          <div>
+            <div class="text-label-md font-bold text-on-surface">ISO 9001:2015 Accredited</div>
+            <div class="text-body-sm text-on-surface-variant">Standardized QMS automotive assembly protocols</div>
+          </div>
+        </div>
+        <!-- Credential 3 -->
+        <div
+          class="flex items-center gap-4 p-4 rounded-lg bg-surface-container-lowest border border-subtle-border shadow-sm"
+          data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+          <div
+            class="w-12 h-12 rounded bg-slate-100 border border-slate-300 flex items-center justify-center text-slate-800">
+            <span class="material-symbols-outlined text-2xl" data-icon="corporate_fare">corporate_fare</span>
+          </div>
+          <div>
+            <div class="text-label-md font-bold text-on-surface">MSME Udyam Registered</div>
+            <div class="text-body-sm text-on-surface-variant">Govt Recognized Institutional Supplier</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full py-16 px-6 lg:px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
+      <!-- Brand Info & Pedigree (Col 1) -->
+      <div class="space-y-4 lg:col-span-4" data-aos="fade-up" data-aos-duration="900">
+        <div
+          class="text-headline-md font-headline-md font-black tracking-tight text-surface-container-lowest uppercase">
+          <a class="flex items-center gap-3 group" href="index.html">
+            <div
+              class="w-10 h-10 rounded-xl flex items-center justify-center text-white font-heading font-black text-xl transition-transform">
+              <img src="img/sks-logo.png">
+            </div>
+            <div class="flex flex-col">
+              <span class="font-heading font-black text-2xl tracking-tight flex items-center text-white">
+                SKS Automotive<span class="text-[#C1C7CD]">.</span>
+              </span>
+              <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold -mt-3">SANATAN GROUP</span>
+            </div>
+          </a>
+        </div>
+        <p class="text-body-sm text-chrome-metallic leading-relaxed">
+          Sanatan Group's specialized commercial vehicle body manufacturing division. Authorized chassis body builder on
+          TATA Motors with integrated ABS vacuum thermoforming plants.
+        </p>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-2">
+            Plant &amp; Works Location
+          </h4>
+          <p class="text-body-sm text-chrome-metallic leading-relaxed mb-3">
+            <strong class="text-white">Indore Works:</strong><br />
+            SKS Automotive Pvt Ltd (Sanatan Group)<br />
+            Village Jakhya, Sanwer Road Industrial Area,<br />
+            Indore - 453555, Madhya Pradesh, India.
+          </p>
+
+        </div>
+
+      </div>
+      <!-- Quick Links (Col 2) -->
+
+      <div class="space-y-4 lg:col-span-2">
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Quick Links</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="index.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Home</a></li>
+          <li><a href="aboutus.html" class="text-chrome-metallic hover:text-on-primary transition-colors">About Us</a>
+          </li>
+          <li><a href="product-facilities.html"
+              class="text-chrome-metallic hover:text-on-primary transition-colors">Product Facilities</a></li>
+          <li><a href="ambulances.html"
+              class="text-chrome-metallic hover:text-on-primary transition-colors">Ambulances</a></li>
+          <li><a href="staff-buses.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Staff &
+              Route Bus</a></li>
+          <li><a href="school-buses.html" class="text-chrome-metallic hover:text-on-primary transition-colors">School
+              Bus</a></li>
+          <li><a href="faq.html" class="text-chrome-metallic hover:text-on-primary transition-colors">FAQ</a></li>
+          <li><a href="after-sales.html" class="text-chrome-metallic hover:text-on-primary transition-colors">After
+              Sales</a></li>
+          <li><a href="contact-us.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Contact</a>
+          </li>
+          <li><a href="coming-soon.html"
+              class="text-chrome-metallic hover:text-on-primary transition-colors">Carrier</a></li>
+        </ul>
+
+      </div>
+      <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="100" class="lg:col-span-3">
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">
+          Products
+        </h4>
+        <ul class="space-y-2 text-body-sm">
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
+              href="tata-3600-route-staff-bus.html">TATA 3600WB Route Bus & Staff Coach</a></li>
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
+              href="tata-4500-route-staff-bus.html">TATA 4500WB Route Bus & Staff Coach</a></li>
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
+              href="tata-5200-route-staff-bus.html">TATA 5200WB Route Bus & Staff Coach</a></li>
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
+              href="tata-3600-school-bus.html">Tata 3600WB School Bus</a></li>
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
+              href="tata-5200-school-bus.html">Tata 5200WB School Bus</a></li>
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
+              href="tata-winger-ambulance.html">TATA Winger Ambulance</a></li>
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
+              href="force-t1-ambulance.html">Force T1 Ambulance</a></li>
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
+              href="force-t2-ambulance.html">Force T2 Ambulance</a></li>
+
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
+              href="maruti-suzuki-eeco-va.html">Maruti Suzuki Eeco VA Ambulance</a></li>
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
+              href="maruti-suzuki-eeco-va-pvt.html">Maruti Suzuki Eeco PTV Ambulance</a></li>
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors" href="mitr-ambulance.html">Tata
+              MITR Ambulance</a></li>
+        </ul>
+      </div>
+      <!-- Corporate & Factory Works (Col 3) -->
+      <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="200" class="lg:col-span-3">
+        <!-- Contact & Communication (Col 4) -->
+        <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="300" class="mb-8">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">
+            Contact / RFQ
+          </h4>
+          <ul class="space-y-1 text-body-sm">
+            <li class="flex items-center gap-2 text-chrome-metallic">
+              <span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="call">call</span>
+              <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal" href="tel:+919201837575">
+              <span class="text-white font-medium">+91 92018 37575</span></a>
+            </li>
+            <li class="flex items-center gap-2 text-chrome-metallic">
+              <span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="call">call</span>
+              <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal" href="tel:+919243561550">
+              <span class="text-white font-medium">+91 92435 61550</span></a>
+            </li>
+            <li class="flex items-center gap-2 text-chrome-metallic">
+              <span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="mail">mail</span>
+              <a class="hover:underline" href="mailto:sales.skssanatan@gmail.com">sales.skssanatan@gmail.com</a>
+            </li>
+            <li class="flex items-center gap-2 text-chrome-metallic">
+              <span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="mail">mail</span>
+              <a class="hover:underline" href="mailto:skscompany15@gmail.com">skscompany15@gmail.com</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-xs font-semibold text-white uppercase tracking-wider">Connect With Us</h4>
+          <div class="flex items-center gap-3">
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"
+              class="w-10 h-10 rounded-lg bg-black border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-secondary hover:border-gray-200 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"
+              class="w-10 h-10 rounded-lg bg-black border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-secondary hover:border-gray-200 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"
+              class="w-10 h-10 rounded-lg bg-black border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-secondary hover:border-gray-200 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.37 14.5 5 15.5 5H18V0h-3.808C10.5 0 9 1.5 9 4.714V8z" />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"
+              class="w-10 h-10 rounded-lg bg-black border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-secondary hover:border-gray-200 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!-- Copyright Sub-strip -->
+    <div class="border-t border-subtle-border/10 py-6 text-center text-xs text-chrome-metallic px-6">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 px-7">
+        <span>© 2026 SKS Automotive Pvt Ltd (Sanatan Group). All Rights Reserved. ISO 9001:2015 &amp; ARAI Certified
+          Body Builder.</span>
+        <div class="flex gap-4">
+          <!-- <a class="hover:underline" href="#">AIS-052 Compliance</a>
+          <span>•</span> -->
+          <a class="hover:underline" href="#">Privacy Policy</a>
+          <span>•</span>
+          <a class="hover:underline" href="#">Terms of Supply</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+    // Initialize AOS Animation Engine
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      delay: 0, // values from 0 to 3000, with step 50ms
+      offset: 100,
+      mirror: false
+    });
+  </script>
+  <!-- Simple Filter Interaction Script -->
+   <script data-purpose="accordion-handler">
+    document.addEventListener('DOMContentLoaded', () => {
+      const triggers = document.querySelectorAll('.accordion-trigger');
+
+      triggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+          const content = trigger.closest('.accordion-item').querySelector('.accordion-content');
+          const icon = trigger.querySelector('.accordion-icon');
+
+          // Optional: close other opened accordion items
+          triggers.forEach(otherTrigger => {
+            if (otherTrigger !== trigger) {
+              otherTrigger.setAttribute('aria-expanded', 'false');
+              const otherContent = otherTrigger.closest('.accordion-item').querySelector('.accordion-content');
+              const otherIcon = otherTrigger.querySelector('.accordion-icon');
+              otherContent.classList.remove('is-open');
+              otherIcon.classList.remove('is-open');
+            }
+          });
+
+          // Toggle current item
+          if (isExpanded) {
+            trigger.setAttribute('aria-expanded', 'false');
+            content.classList.remove('is-open');
+            icon.classList.remove('is-open');
+          } else {
+            trigger.setAttribute('aria-expanded', 'true');
+            content.classList.add('is-open');
+            icon.classList.add('is-open');
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const productCards = document.querySelectorAll('.product-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Toggle active class on buttons
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-black', 'text-on-primary', 'font-semibold');
+            b.classList.add('bg-slate-surface', 'text-on-surface-variant', 'border', 'border-subtle-border');
+          });
+          btn.classList.remove('bg-slate-surface', 'text-on-surface-variant', 'border', 'border-subtle-border');
+          btn.classList.add('bg-black', 'text-on-primary', 'font-semibold');
+
+          const category = btn.getAttribute('data-category');
+
+          productCards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+   
+  
+  <aside aria-label="Quick Contact Actions"
+    class="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-2.5 items-end pr-2 md:pr-4 pointer-events-none">
+    <a aria-label="Chat on WhatsApp"
+      class="pointer-events-auto group flex items-center bg-[#075E54] hover:bg-[#128C7E] text-white p-2.5 md:p-3 rounded-full shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-x-1 border border-white/20"
+      href="https://wa.me/917723018035" rel="noopener noreferrer" target="_blank"><span
+        class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-label-md text-xs font-semibold px-0 group-hover:px-2">WhatsApp
+        Inquiry</span><span class="flex items-center justify-center w-6 h-6"><svg
+          class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
+          <path
+            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+          </path>
+        </svg></span></a><a aria-label="Call Sales Desk directly"
+      class="pointer-events-auto group flex items-center bg-[#0B192C] hover:bg-[#1E3E62] text-white p-2.5 md:p-3 rounded-full shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-x-1 border border-white/20"
+      href="tel:+917723018035"><span
+        class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-label-md text-xs font-semibold px-0 group-hover:px-2">Direct
+        Call: +91 77230 18035</span><span class="material-symbols-outlined text-xl text-white"
+        data-icon="call">call</span></a><a aria-label="Jump to RFQ Form"
+      class="pointer-events-auto group flex items-center bg-amber-600 hover:bg-amber-500 text-white p-2.5 md:p-3 rounded-full shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-x-1 border border-white/20"
+      href="#rfq-section"><span
+        class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-label-md text-xs font-semibold px-0 group-hover:px-2">Quick
+        RFQ Estimator</span><span class="material-symbols-outlined text-xl text-white"
+        data-icon="request_quote">request_quote</span></a></aside><button aria-label="Back to Top"
+    class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-[#0B192C] text-white flex items-center justify-center shadow-xl border border-slate-700 hover:bg-slate-800 hover:-translate-y-1 transition-all duration-300 group cursor-pointer"
+    onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to Top"><svg
+      class="w-5 h-5 text-white transition-transform group-hover:-translate-y-0.5" fill="none" stroke="currentColor"
+      viewBox="0 0 24 24">
+      <path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+    </svg></button>
+
+</body>
+
+</html>
+
+
+
