@@ -311,7 +311,7 @@
     </div>
   </header>
   <!-- TopNavBar (Shared Component) -->
-  <nav class="sticky top-0 z-50 bg-surface-container-lowest dark:bg-black shadow-[0_1px_3px_0_rgba(11,25,44,0.04)]">
+<nav class="sticky top-0 z-50 bg-surface-container-lowest dark:bg-black shadow-[0_1px_3px_0_rgba(11,25,44,0.04)]">
     <div class="flex justify-between items-center w-full px-lg-6 px-xl-6 px-sm-2 lg:px-8 max-w-7xl mx-auto h-20">
       <!-- Brand Logo -->
       <a class="flex items-center gap-3 group" href="index.html">
@@ -320,18 +320,19 @@
           <img src="img/sks-logo.png">
         </div>
         <div class="flex flex-col">
-          <span class="font-heading font-black text-2xl tracking-tight flex items-center text-[#000]">
-            SKS Automotive<span class="text-[#C1C7CD]">.</span>
+          <span class="font-heading font-black text-lg tracking-tight flex items-center text-[#000]">
+            SKS AUTOMOTIVE PVT. LTD.
           </span>
           <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold -mt-1">SANATAN GROUP</span>
         </div>
       </a>
       <!-- Desktop Nav Links -->
       <div class="hidden lg:flex items-center space-x-8">
-        <a class="relative py-1 text-secondary font-semibold text-sm transition-colors duration-200 group"
+        <a class="relative py-1 text-secondary font-semibold text-sm hover:text-on-surface transition-colors duration-200 group"
           href="index.html"><span class="text-on-surface">Home</span>
           <span
-            class="absolute bottom-0 left-0 w-full h-[2px] bg-secondary transition-all duration-300 ease-out"></span></a>
+            class="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary transition-all duration-300 ease-out group-hover:w-full"></span>
+          </a>
 
         <a class="relative py-1 text-on-surface-variant font-medium text-sm hover:text-on-surface transition-colors duration-200 group"
           href="aboutus.html"> <span class="">About Us</span>
@@ -359,73 +360,50 @@
             <div
               class="bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/60 p-5 grid grid-cols-3 gap-4">
               <!-- Item 1: School Bus -->
-              <a class="group/item flex flex-col rounded-lg p-2.5 hover:bg-surface-container-low transition-colors border border-transparent hover:border-outline-variant/40"
+              <a class="group/item flex flex-col rounded-lg p-2.5 transition-colors hover:border-outline-variant/40"
                 href="school-buses.html">
-                <div class="h-28 w-full rounded overflow-hidden bg-surface-container mb-3 relative">
+                <div class="h-28 w-full rounded overflow-hidden bg-white mb-3 relative">
                   <img alt="School Bus"
                     class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-200"
-                    src="https://lh3.googleusercontent.com/aida/AEtjO1U-xDGb8fajrNzQloOZSRSPFnLnFQ9JoGQQ6bKsf6r2jUmhdagaXZL4yQjTlyDiuhp9_qCy5k3N-5_vOtGx8nPNMxHirLlFuzjB5ljbWpU275yI0aEZ8NI1JOcc6FrVBVG2BO1y08EnEZ7vY_96eUNUZhgB-2Omauw_w_HOg2z4jF49Fg7Jd1cr1s4w-yyHvsyZpNLiFUIsk4uAn1ORiifVb_tLesELMs6tegxfSs3WOeGTrGrw3pb3nCk" />
-                  <span
-                    class="absolute top-1.5 left-1.5 px-2 py-0.5 rounded bg-inverse-surface/80 text-[10px] font-mono text-surface-container-lowest uppercase tracking-wider backdrop-blur-sm">AIS-063</span>
+                    src="img/school-bus.png" />
                 </div>
                 <div
-                  class="font-bold text-sm text-on-surface group-hover/item:text-secondary flex items-center justify-between">
+                  class="font-bold text-sm text-on-surface group-hover/item:text-secondary flex items-center justify-center">
                   <span class="">School Bus</span>
                   <span
                     class="material-symbols-outlined text-sm opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-0.5 transition-all">arrow_forward</span>
                 </div>
-                <p class="text-xs text-on-surface-variant mt-1 leading-relaxed line-clamp-2">
-                  AIS-063 CMVR compliant student coaches (32 to 60+ seater) on Tata LPO chassis.
-                </p>
-                <span class="mt-2 text-[11px] font-semibold text-primary inline-flex items-center gap-0.5">
-                  Explore specs →
-                </span>
               </a>
               <!-- Item 2: Staff & Route Bus -->
-              <a class="group/item flex flex-col rounded-lg p-2.5 hover:bg-surface-container-low transition-colors border border-transparent hover:border-outline-variant/40"
+              <a class="group/item flex flex-col rounded-lg p-2.5 transition-colors hover:border-outline-variant/40"
                 href="staff-buses.html">
-                <div class="h-28 w-full rounded overflow-hidden bg-surface-container mb-3 relative">
+                <div class="h-28 w-full rounded overflow-hidden bg-white mb-3 relative">
                   <img alt="Staff &amp; Route Bus"
                     class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-200"
-                    src="https://lh3.googleusercontent.com/aida/AEtjO1WK6M1jxddZmWK_Q7mf3lnfbNYvdoEShECNGQ_IZU2GWFE8dZRuIKXVVrAPfhgSvJBaWeKU0xWS9CBGR1jQMuOx5umCOsjmjJkB2lrTxgpkozFNyGAlBm1PHaAYlGon4Xj-SMEBvmI27_QlYngghPhYogzglY_dGmulyXDQIy5r8UAlLRLDSyJ8PqnNgwxS81G9nK_C6c1scCyvKsjxL52vyOlgEIQKGcPcQduAETXZpxYZgGc2xTnO0Q" />
-                  <span
-                    class="absolute top-1.5 left-1.5 px-2 py-0.5 rounded bg-inverse-surface/80 text-[10px] font-mono text-surface-container-lowest uppercase tracking-wider backdrop-blur-sm">AIS-052</span>
+                    src="img/menu-staff-bus.png" />
+
                 </div>
                 <div
-                  class="font-bold text-sm text-on-surface group-hover/item:text-secondary flex items-center justify-between">
+                  class="font-bold text-sm text-on-surface group-hover/item:text-secondary flex items-center justify-center">
                   <span class="">Staff &amp; Route Bus</span>
                   <span
                     class="material-symbols-outlined text-sm opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-0.5 transition-all">arrow_forward</span>
                 </div>
-                <p class="text-xs text-on-surface-variant mt-1 leading-relaxed line-clamp-2">
-                  Intercity executive staff shuttles, airport tarmac &amp; coaches (32-54 seater).
-                </p>
-                <span class="mt-2 text-[11px] font-semibold text-primary inline-flex items-center gap-0.5">
-                  Explore specs →
-                </span>
               </a>
               <!-- Item 3: Ambulance & Healthcare -->
-              <a class="group/item flex flex-col rounded-lg p-2.5 hover:bg-surface-container-low transition-colors border border-transparent hover:border-outline-variant/40"
+              <a class="group/item flex flex-col hover:border-outline-variant/40 p-2.5 transition-colors"
                 href="ambulances.html">
-                <div class="h-28 w-full rounded overflow-hidden bg-surface-container mb-3 relative">
+                <div class="h-28 w-full rounded overflow-hidden bg-white mb-3 relative">
                   <img alt="Ambulance &amp; Healthcare"
                     class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-200"
-                    src="https://lh3.googleusercontent.com/aida/AEtjO1WDD_4z3YiDvyr-JqmfaoBeuex-l20fje6l1Ka2Z43l_waC6uph9To2N4hspRU6hC1Hi1_TaGQUZFktdQ5qZnoPT5XYMVJXFdQtJcaDQ_BAc5qZPcCydCSueQMq3F7uq0B54387aDKGla8dB2O7AOKCxtpbDrGxZV6QOLKSgVD4TlmkZCikt1NTjPlzd-z8uRjKG-N_uVMY4m_FS572AgQ9IWROK2LRHMxHc4nADy5IOqBEd7tbohv-Y9U" />
-                  <span
-                    class="absolute top-1.5 left-1.5 px-2 py-0.5 rounded bg-inverse-surface/80 text-[10px] font-mono text-surface-container-lowest uppercase tracking-wider backdrop-blur-sm">AIS-125</span>
+                    src="img/ambulances-menu.png" />
                 </div>
                 <div
-                  class="font-bold text-sm text-on-surface group-hover/item:text-secondary flex items-center justify-between">
+                  class="font-bold text-sm text-on-surface group-hover/item:text-secondary flex items-center justify-center">
                   <span class="">Ambulance &amp; Healthcare</span>
                   <span
                     class="material-symbols-outlined text-sm opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-0.5 transition-all">arrow_forward</span>
                 </div>
-                <p class="text-xs text-on-surface-variant mt-1 leading-relaxed line-clamp-2">
-                  AIS-125 Type B/C Basic Life Support (BLS) &amp; Type D ICU mobile units.
-                </p>
-                <span class="mt-2 text-[11px] font-semibold text-primary inline-flex items-center gap-0.5">
-                  Explore specs →
-                </span>
               </a>
             </div>
           </div>
@@ -501,8 +479,8 @@
                 <img src="img/sks-logo.png">
               </div>
               <div class="flex flex-col relative">
-                <span class="font-heading font-black tracking-tight flex items-center text-[#000] leading-none">
-                  SKS Automotive<span class="text-[#C1C7CD]">.</span>
+                <span class="font-heading font-black text-lg tracking-tight flex items-center text-[#000]">
+            SKS AUTOMOTIVE PVT. LTD.
                 </span>
                 <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold mt-1">SANATAN
                   GROUP</span>
@@ -632,7 +610,7 @@
             <a href="index.html" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-secondary text-white font-medium hover:bg-secondary/95 transition-all shadow-lg shadow-secondary/20">
                 Return to Homepage
             </a>
-            <a href="index.html#contact" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-surface-container-high text-secondary font-medium border border-subtle-border/30 hover:bg-surface-container-highest transition-all">
+            <a href="contact-us.html" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-surface-container-high text-secondary font-medium border border-subtle-border/30 hover:bg-surface-container-highest transition-all">
                 Contact Fleet Sales
             </a>
         </div>
@@ -713,8 +691,8 @@
               <img src="img/sks-logo.png">
             </div>
             <div class="flex flex-col">
-              <span class="font-heading font-black text-2xl tracking-tight flex items-center text-white">
-                SKS Automotive<span class="text-[#C1C7CD]">.</span>
+              <span class="font-heading font-black text-lg tracking-tight flex items-center text-[#fff]">
+            SKS AUTOMOTIVE PVT. LTD.
               </span>
               <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold -mt-3">SANATAN GROUP</span>
             </div>
@@ -756,13 +734,13 @@
               Route Bus</a></li>
           <li><a href="school-buses.html" class="text-chrome-metallic hover:text-on-primary transition-colors">School
               Bus</a></li>
-          <li><a href="faq.html" class="text-chrome-metallic hover:text-on-primary transition-colors">FAQ</a></li>
+          <li><a href="coming-soon.html" class="text-chrome-metallic hover:text-on-primary transition-colors">FAQ</a></li>
           <li><a href="after-sales.html" class="text-chrome-metallic hover:text-on-primary transition-colors">After
               Sales</a></li>
           <li><a href="contact-us.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Contact</a>
           </li>
           <li><a href="coming-soon.html"
-              class="text-chrome-metallic hover:text-on-primary transition-colors">Carrier</a></li>
+              class="text-chrome-metallic hover:text-on-primary transition-colors">Career</a></li>
         </ul>
 
       </div>
