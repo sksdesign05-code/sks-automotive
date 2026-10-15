@@ -32,6 +32,17 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <style>
+        /* Styles text selected by the user */
+::selection {
+  background-color: #1a1a1a; /* Highlight background color */
+  color: #b6b6b6;            /* Text color */
+}
+
+/* Mozilla Firefox fallback (older versions) */
+::-moz-selection {
+  background-color: #181818;
+  color: #bbbbbb;
+}
     .sks-parallax-hero {
             background-image: linear-gradient(to bottom, rgba(10,10,10,0.85), rgba(10,10,10,0.95)), url('img/sanatan-view.png');
             background-attachment: fixed;

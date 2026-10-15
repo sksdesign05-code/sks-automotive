@@ -30,6 +30,17 @@
 
   <script src="scripts/tailwind-config.js"></script>
   <style>
+        /* Styles text selected by the user */
+::selection {
+  background-color: #1a1a1a; /* Highlight background color */
+  color: #b6b6b6;            /* Text color */
+}
+
+/* Mozilla Firefox fallback (older versions) */
+::-moz-selection {
+  background-color: #181818;
+  color: #bbbbbb;
+}
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
       display: inline-block;
