@@ -195,17 +195,20 @@
     };
   </script>
   <style>
-        /* Styles text selected by the user */
-::selection {
-  background-color: #1a1a1a; /* Highlight background color */
-  color: #b6b6b6;            /* Text color */
-}
+    /* Styles text selected by the user */
+    ::selection {
+      background-color: #1a1a1a;
+      /* Highlight background color */
+      color: #b6b6b6;
+      /* Text color */
+    }
 
-/* Mozilla Firefox fallback (older versions) */
-::-moz-selection {
-  background-color: #181818;
-  color: #bbbbbb;
-}
+    /* Mozilla Firefox fallback (older versions) */
+    ::-moz-selection {
+      background-color: #181818;
+      color: #bbbbbb;
+    }
+
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
       display: inline-block;
@@ -304,36 +307,12 @@
       animation-play-state: paused;
     }
   </style>
-  <style data-purpose="accordion-transitions">
-    /* Smooth CSS Grid accordion expansion */
-    .accordion-content {
-      display: grid;
-      grid-template-rows: 0fr;
-      transition: grid-template-rows 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 
-    .accordion-content.is-open {
-      grid-template-rows: 1fr;
-    }
-
-    .accordion-inner {
-      overflow: hidden;
-    }
-
-    /* Icon rotation for toggle state */
-    .accordion-icon {
-      transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .accordion-icon.is-open {
-      transform: rotate(45deg);
-    }
-  </style>
 </head>
 
 <body class="text-on-surface font-body-md antialiased selection:text-white">
   <!-- Top Utilities Strip -->
-<header class="bg-black text-chrome-metallic border-b border-subtle-border/20 text-xs hidden md:block">
+  <header class="bg-black text-chrome-metallic border-b border-subtle-border/20 text-xs hidden md:block">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-2 flex justify-between items-center">
       <div class="flex items-center space-x-5">
         <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
@@ -351,15 +330,15 @@
       </div>
       <div class="flex items-center space-x-3">
         <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
-            href="tel:+919243561550">
-            <span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="call">call</span>
-            +91 92435 61550
-          </a>
+          href="tel:+919243561550">
+          <span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="call">call</span>
+          +91 92435 61550
+        </a>
         <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
           href="tel:+919201837575">
           <span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="call">call</span>
           +91 92018 37575
-          </a>
+        </a>
       </div>
 
     </div>
@@ -386,7 +365,7 @@
           href="index.html"><span class="text-on-surface">Home</span>
           <span
             class="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary transition-all duration-300 ease-out group-hover:w-full"></span>
-          </a>
+        </a>
 
         <a class="relative py-1 text-on-surface-variant font-medium text-sm hover:text-on-surface transition-colors duration-200 group"
           href="aboutus.html"> <span class="">About Us</span>
@@ -534,7 +513,7 @@
               </div>
               <div class="flex flex-col relative">
                 <span class="font-heading font-black text-lg tracking-tight flex items-center text-[#000]">
-            SKS AUTOMOTIVE PVT. LTD.
+                  SKS AUTOMOTIVE PVT. LTD.
                 </span>
                 <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold mt-1">SANATAN
                   GROUP</span>
@@ -669,7 +648,10 @@
           TATA WINGER Ambulance
         </h1>
         <p class="text-sm text-slate-600">
-          Engineered on the reliable Tata Winger LCV monocoque platform, specifically designed for transporting non-critical patients who require medical supervision without intensive care. Built with seamless anti-bacterial sanitary wall cladding, integrated oxygen delivery system, auto-loading stretcher, and emergency monitoring telemetry.
+          Engineered on the reliable Tata Winger LCV monocoque platform, specifically designed for transporting
+          non-critical patients who require medical supervision without intensive care. Built with seamless
+          anti-bacterial sanitary wall cladding, integrated oxygen delivery system, auto-loading stretcher, and
+          emergency monitoring telemetry.
         </p>
       </div>
       <div class="flex flex-wrap sm:flex-nowrap items-center gap-3">
@@ -722,24 +704,32 @@
             <button
               class="h-32 hero-tab-btn flex items-center gap-2 rounded-lg bg-surface-container text-xs font-semibold text-on-surface transition-all text-left border border-primary"
               onclick="switchHeroSlide(0)" type="button">
-              <img alt="Exterior 3/4 Front Stance" class="h-32 w-full h-full object-cover transition-transform duration-300 rounded-lg" src="img/tata-winger.png">
+              <img alt="Exterior 3/4 Front Stance"
+                class="h-32 w-full h-full object-cover transition-transform duration-300 rounded-lg"
+                src="img/tata-winger.png">
             </button>
             <button
               class="h-32 hero-tab-btn flex items-center gap-2 rounded-lg hover:bg-surface-container-low text-xs font-medium text-on-surface-variant border border-outline-variant transition-all text-left"
               onclick="switchHeroSlide(1)" type="button">
-              <img alt="Exterior 3/4 Front Stance" class="h-32 w-full h-full object-cover transition-transform duration-300 rounded-lg" src="img/tata-winger-ambulance/tata-winger-301.JPG">
+              <img alt="Exterior 3/4 Front Stance"
+                class="h-32 w-full h-full object-cover transition-transform duration-300 rounded-lg"
+                src="img/tata-winger-ambulance/tata-winger-301.JPG">
             </button>
             <button
               class="h-32 hero-tab-btn flex items-center gap-2 rounded-lg hover:bg-surface-container-low text-xs font-medium text-on-surface-variant border border-outline-variant transition-all text-left"
               onclick="switchHeroSlide(2)" type="button">
-              <img alt="Exterior 3/4 Front Stance" class="h-32 w-full h-full object-cover transition-transform duration-300 rounded-lg" src="img/tata-winger-ambulance/tata-winger-311.JPG">
+              <img alt="Exterior 3/4 Front Stance"
+                class="h-32 w-full h-full object-cover transition-transform duration-300 rounded-lg"
+                src="img/tata-winger-ambulance/tata-winger-311.JPG">
             </button>
             <button
               class="h-32 hero-tab-btn flex items-center gap-2 rounded-lg hover:bg-surface-container-low text-xs font-medium text-on-surface-variant border border-outline-variant transition-all text-left"
               onclick="switchHeroSlide(3)" type="button">
-              <img alt="Exterior 3/4 Front Stance" class="h-32 w-full h-full object-cover transition-transform duration-300 rounded-lg" src="img/tata-winger-ambulance/tata-winger-341.JPG">
+              <img alt="Exterior 3/4 Front Stance"
+                class="h-32 w-full h-full object-cover transition-transform duration-300 rounded-lg"
+                src="img/tata-winger-ambulance/tata-winger-341.JPG">
             </button>
-            
+
           </div>
         </div>
         <!-- Feature Pill Badges -->
@@ -779,341 +769,220 @@
         </div> -->
       </div>
       <!-- Right Side Telemetry Column -->
-      <div class="lg:col-span-4 bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-6 shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] space-y-6">
-<div class="border-b border-outline-variant/40 pb-4">
-<div class="flex items-center justify-between">
-<h2 class="text-xs uppercase tracking-widest text-on-surface-variant font-bold font-headline">Clinical Architecture Specs</h2>
-<span class="material-symbols-outlined text-primary text-xl">medical_services</span>
-</div>
-<p class="text-xl font-black text-on-surface tracking-tight mt-1">SKS BLS-3488-WB</p>
-<span class="text-xs text-secondary font-medium">Tata Winger High-Roof Platform Homologation</span>
-</div>
-<dl class="space-y-4 text-xs divide-y divide-outline-variant/20">
-<div class="pt-3 flex justify-between items-center">
-<dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
-<span class="material-symbols-outlined text-sm text-secondary">straighten</span> Platform Wheelbase
+      <div
+        class="lg:col-span-4 bg-surface-container-lowest border border-outline-variant/50 rounded-2xl p-6 shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] space-y-6">
+        <div class="border-b border-outline-variant/40 pb-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-xs uppercase tracking-widest text-on-surface-variant font-bold font-headline">Clinical
+              Architecture Specs</h2>
+            <span class="material-symbols-outlined text-primary text-xl">medical_services</span>
+          </div>
+          <p class="text-xl font-black text-on-surface tracking-tight mt-1">SKS BLS-3488-WB</p>
+          <span class="text-xs text-secondary font-medium">Tata Winger High-Roof Platform Homologation</span>
+        </div>
+        <dl class="space-y-4 text-xs divide-y divide-outline-variant/20">
+          <div class="pt-3 flex justify-between items-center">
+            <dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-sm text-secondary">straighten</span> Platform Wheelbase
             </dt>
-<dd class="font-bold text-on-surface text-right">3,488 mm (Monocoque)</dd>
-</div>
-<div class="pt-3 flex justify-between items-center">
-<dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
-<span class="material-symbols-outlined text-sm text-secondary">height</span> Saloon Standing Height
+            <dd class="font-bold text-on-surface text-right">3,488 mm (Monocoque)</dd>
+          </div>
+          <div class="pt-3 flex justify-between items-center">
+            <dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-sm text-secondary">height</span> Saloon Standing Height
             </dt>
-<dd class="font-bold text-on-surface text-right">1,900 mm (Clear Walk-In)</dd>
-</div>
-<div class="pt-3 flex justify-between items-center">
-<dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
-<span class="material-symbols-outlined text-sm text-secondary">group</span> Patient &amp; Crew Capacity
+            <dd class="font-bold text-on-surface text-right">1,900 mm (Clear Walk-In)</dd>
+          </div>
+          <div class="pt-3 flex justify-between items-center">
+            <dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-sm text-secondary">group</span> Patient &amp; Crew Capacity
             </dt>
-<dd class="font-bold text-on-surface text-right">1 Stretcher + 2-3 Staff + Driver</dd>
-</div>
-<div class="pt-3 flex justify-between items-center">
-<dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
-<span class="material-symbols-outlined text-sm text-secondary">gas_meter</span> Oxygen Manifold
+            <dd class="font-bold text-on-surface text-right">1 Stretcher + 2-3 Staff + Driver</dd>
+          </div>
+          <div class="pt-3 flex justify-between items-center">
+            <dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-sm text-secondary">gas_meter</span> Oxygen Manifold
             </dt>
-<dd class="font-bold text-on-surface text-right">Dual D-Type 46.7L System</dd>
-</div>
-<div class="pt-3 flex justify-between items-center">
-<dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
-<span class="material-symbols-outlined text-sm text-secondary">scale</span> Gross Vehicle Wt (GVW)
+            <dd class="font-bold text-on-surface text-right">Dual D-Type 46.7L System</dd>
+          </div>
+          <div class="pt-3 flex justify-between items-center">
+            <dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-sm text-secondary">scale</span> Gross Vehicle Wt (GVW)
             </dt>
-<dd class="font-bold text-on-surface text-right">3,490 kg</dd>
-</div>
-<div class="pt-3 flex justify-between items-center">
-<dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
-<span class="material-symbols-outlined text-sm text-secondary">tune</span> Regulating Standard
+            <dd class="font-bold text-on-surface text-right">3,490 kg</dd>
+          </div>
+          <div class="pt-3 flex justify-between items-center">
+            <dt class="text-on-surface-variant font-medium flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-sm text-secondary">tune</span> Regulating Standard
             </dt>
-<dd class="font-bold text-on-surface text-right">AIS-125 / CMVR Rule 125C</dd>
-</div>
-</dl>
-<!-- Quick feature pills -->
-<div class="pt-2 flex flex-wrap gap-1.5">
-<span class="text-[11px] font-semibold bg-surface-container px-2.5 py-1 rounded-full text-on-surface">Roll-Over Monocoque Cage</span>
-<span class="text-[11px] font-semibold bg-surface-container px-2.5 py-1 rounded-full text-on-surface">Subros Clinical HVAC</span>
-<span class="text-[11px] font-semibold bg-surface-container px-2.5 py-1 rounded-full text-on-surface">Auto-Loading Stretcher Lock</span>
-<span class="text-[11px] font-semibold bg-surface-container px-2.5 py-1 rounded-full text-on-surface">2.2L DICOR BS-VI Drivetrain</span>
-</div>
-
-</div>
+            <dd class="font-bold text-on-surface text-right">AIS-125 / CMVR Rule 125C</dd>
+          </div>
+        </dl>
+        <!-- Quick feature pills -->
+        
+      </div>
     </div>
     <!-- Narrative Section -->
-    <section class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-8 md:p-10 shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] space-y-8 mt-16">
-<div class="max-w-3xl space-y-3">
-<span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Standard Operational Capability</span>
-<h2 class="text-2xl md:text-3xl font-black text-on-surface tracking-tight font-headline">
+    <section
+      class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-8 md:p-10 shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] space-y-8 mt-16">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Standard Operational
+          Capability</span>
+        <h2 class="text-2xl md:text-3xl font-black text-on-surface tracking-tight font-headline">
           Purpose-Built for Patient Transit, Medical Stability &amp; Attendant Ergonomics
         </h2>
-<p class="text-sm md:text-base text-on-surface-variant leading-relaxed">
-          The BLS Ambulance is designed for transporting non-critical patients who require medical supervision without intensive care. It includes essential systems like oxygen supply and basic monitoring support to ensure patient stability during transit. Comfort, cleanliness, and space are carefully considered to assist both patient and attendant.
+        <p class="text-sm md:text-base text-on-surface-variant leading-relaxed">
+          The BLS Ambulance is designed for transporting non-critical patients who require medical supervision without
+          intensive care. It includes essential systems like oxygen supply and basic monitoring support to ensure
+          patient stability during transit. Comfort, cleanliness, and space are carefully considered to assist both
+          patient and attendant.
         </p>
-</div>
-<!-- 3-Column Clinical Highlights -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
-<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/40 space-y-3 flex flex-col justify-between">
-<div class="space-y-3">
-<div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center">
-<span class="material-symbols-outlined text-xl">air</span>
-</div>
-<h3 class="font-bold text-base text-on-surface font-headline">Oxygen Delivery &amp; Flowmeter Integration</h3>
-<p class="text-xs text-on-surface-variant leading-relaxed">
-              Wall-mounted piped medical gas system with pin-index brass regulators, 2x oxygen outlets, and flowmeter with humidifier bottle securely integrated in proximity to the patient headrest.
+      </div>
+      <!-- 3-Column Clinical Highlights -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+        <div
+          class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/40 space-y-3 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center">
+              <span class="material-symbols-outlined text-xl">air</span>
+            </div>
+            <h3 class="font-bold text-base text-on-surface font-headline">Oxygen Delivery &amp; Flowmeter Integration
+            </h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Wall-mounted piped medical gas system with pin-index brass regulators, 2x oxygen outlets, and flowmeter
+              with humidifier bottle securely integrated in proximity to the patient headrest.
             </p>
-</div>
-<span class="text-[11px] font-semibold text-secondary flex items-center gap-1 pt-2">
-<span class="material-symbols-outlined text-sm">check_circle</span> Dual Cylinder Quick-Release
+          </div>
+          <span class="text-[11px] font-semibold text-secondary flex items-center gap-1 pt-2">
+            <span class="material-symbols-outlined text-sm">check_circle</span> Dual Cylinder Quick-Release
           </span>
-</div>
-<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/40 space-y-3 flex flex-col justify-between">
-<div class="space-y-3">
-<div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center">
-<span class="material-symbols-outlined text-xl">sanitizer</span>
-</div>
-<h3 class="font-bold text-base text-on-surface font-headline">Anti-Bacterial Sanitary Cladding</h3>
-<p class="text-xs text-on-surface-variant leading-relaxed">
-              Seamless vacuum-formed ABS / FRP non-porous washable interior side walls and marine-grade phenolic floor coated with anti-skid chemical-resistant vinyl for zero pathogen harbor.
+        </div>
+        <div
+          class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/40 space-y-3 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center">
+              <span class="material-symbols-outlined text-xl">sanitizer</span>
+            </div>
+            <h3 class="font-bold text-base text-on-surface font-headline">Anti-Bacterial Sanitary Cladding</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Seamless vacuum-formed ABS / FRP non-porous washable interior side walls and marine-grade phenolic floor
+              coated with anti-skid chemical-resistant vinyl for zero pathogen harbor.
             </p>
-</div>
-<span class="text-[11px] font-semibold text-secondary flex items-center gap-1 pt-2">
-<span class="material-symbols-outlined text-sm">check_circle</span> Bleach &amp; Disinfectant Proof
+          </div>
+          <span class="text-[11px] font-semibold text-secondary flex items-center gap-1 pt-2">
+            <span class="material-symbols-outlined text-sm">check_circle</span> Bleach &amp; Disinfectant Proof
           </span>
-</div>
-<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/40 space-y-3 flex flex-col justify-between">
-<div class="space-y-3">
-<div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center">
-<span class="material-symbols-outlined text-xl">airline_seat_recline_normal</span>
-</div>
-<h3 class="font-bold text-base text-on-surface font-headline">Foldable Attendant Seating &amp; Cabinetry</h3>
-<p class="text-xs text-on-surface-variant leading-relaxed">
-              High-back ergonomic attendant seats with safety harness, overhead medicine storage lockers with push-to-open safety latches, and dual overhead IV fluid infusion drip rails.
+        </div>
+        <div
+          class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/40 space-y-3 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center">
+              <span class="material-symbols-outlined text-xl">airline_seat_recline_normal</span>
+            </div>
+            <h3 class="font-bold text-base text-on-surface font-headline">Foldable Attendant Seating &amp; Cabinetry
+            </h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              High-back ergonomic attendant seats with safety harness, overhead medicine storage lockers with
+              push-to-open safety latches, and dual overhead IV fluid infusion drip rails.
             </p>
-</div>
-<span class="text-[11px] font-semibold text-secondary flex items-center gap-1 pt-2">
-<span class="material-symbols-outlined text-sm">check_circle</span> AIS-125 Ergonomic Standard
+          </div>
+          <span class="text-[11px] font-semibold text-secondary flex items-center gap-1 pt-2">
+            <span class="material-symbols-outlined text-sm">check_circle</span> AIS-125 Ergonomic Standard
           </span>
-</div>
-</div>
-</section>
-<section class="space-y-6 my-16 py-16">
-<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
-<div>
-<span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Fleet Customization Configurations</span>
-<h2 class="text-2xl font-black text-on-surface tracking-tight font-headline">
+        </div>
+      </div>
+    </section>
+    <section class="space-y-6 py-16">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Fleet Customization
+            Configurations</span>
+          <h2 class="text-2xl font-black text-on-surface tracking-tight font-headline">
             Available Ambulance Interior Topologies
           </h2>
-</div>
-<p class="text-xs text-on-surface-variant font-medium">Modular layout options built upon the Tata Winger 3488 WB chassis</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-<!-- Config 01 -->
-<div class="p-5 rounded-xl bg-surface-container-lowest border-2 border-primary space-y-3 shadow-sm flex flex-col justify-between">
-<div class="space-y-2">
-<span class="text-[10px] font-extrabold uppercase px-2 py-0.5 bg-primary text-white rounded">Config 01 • Standard</span>
-<h3 class="font-bold text-sm text-on-surface font-headline">Patient Transfer (Standard BLS)</h3>
-<p class="text-xs text-on-surface-variant leading-relaxed">
-              1 Stretcher Trolley + 2 Fixed Attendant Bench + 1 Foldable Paramedic Chair. Optimal layout for regular inter-hospital transfer operations.
+        </div>
+        <p class="text-xs text-on-surface-variant font-medium">Modular layout options built upon the Tata Winger 3488 WB
+          chassis</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Config 01 -->
+        <div
+          class="p-5 rounded-xl bg-surface-container-lowest border-2 border-primary space-y-3 shadow-sm flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 bg-primary text-white rounded">Config 01 •
+              Standard</span>
+            <h3 class="font-bold text-sm text-on-surface font-headline">Patient Transfer (Standard BLS)</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              1 Stretcher Trolley + 2 Fixed Attendant Bench + 1 Foldable Paramedic Chair. Optimal layout for regular
+              inter-hospital transfer operations.
             </p>
-</div>
-<div class="pt-3 border-t border-outline-variant/30 text-[11px] font-semibold text-primary">
+          </div>
+          <div class="pt-3 border-t border-outline-variant/30 text-[11px] font-semibold text-primary">
             ✓ Recommended for Municipal Fleets
           </div>
-</div>
-<!-- Config 02 -->
-<div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/50 space-y-3 shadow-sm hover:border-primary transition-colors flex flex-col justify-between">
-<div class="space-y-2">
-<span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-surface-container text-on-surface rounded">Config 02</span>
-<h3 class="font-bold text-sm text-on-surface font-headline">Hospital Triage &amp; Clinic Shuttle</h3>
-<p class="text-xs text-on-surface-variant leading-relaxed">
-              1 Stretcher Trolley + 1 Wheelchair Securement Bay + 2 Attendants. Designed for integrated geriatric and outpatient transit programs.
+        </div>
+        <!-- Config 02 -->
+        <div
+          class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/50 space-y-3 shadow-sm hover:border-primary transition-colors flex flex-col justify-between">
+          <div class="space-y-2">
+            <span
+              class="text-[10px] font-bold uppercase px-2 py-0.5 bg-surface-container text-on-surface rounded">Config
+              02</span>
+            <h3 class="font-bold text-sm text-on-surface font-headline">Hospital Triage &amp; Clinic Shuttle</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              1 Stretcher Trolley + 1 Wheelchair Securement Bay + 2 Attendants. Designed for integrated geriatric and
+              outpatient transit programs.
             </p>
-</div>
-<div class="pt-3 border-t border-outline-variant/30 text-[11px] font-semibold text-secondary">
+          </div>
+          <div class="pt-3 border-t border-outline-variant/30 text-[11px] font-semibold text-secondary">
             Wheelchair Docking Ready
           </div>
-</div>
-<!-- Config 03 -->
-<div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/50 space-y-3 shadow-sm hover:border-primary transition-colors flex flex-col justify-between">
-<div class="space-y-2">
-<span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-surface-container text-on-surface rounded">Config 03</span>
-<h3 class="font-bold text-sm text-on-surface font-headline">Dual Stretcher Emergency Response</h3>
-<p class="text-xs text-on-surface-variant leading-relaxed">
-              2-Tier / Twin Stretcher Configuration with fold-down secondary stretcher bracket and single paramedic observation chair.
+        </div>
+        <!-- Config 03 -->
+        <div
+          class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/50 space-y-3 shadow-sm hover:border-primary transition-colors flex flex-col justify-between">
+          <div class="space-y-2">
+            <span
+              class="text-[10px] font-bold uppercase px-2 py-0.5 bg-surface-container text-on-surface rounded">Config
+              03</span>
+            <h3 class="font-bold text-sm text-on-surface font-headline">Dual Stretcher Emergency Response</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              2-Tier / Twin Stretcher Configuration with fold-down secondary stretcher bracket and single paramedic
+              observation chair.
             </p>
-</div>
-<div class="pt-3 border-t border-outline-variant/30 text-[11px] font-semibold text-secondary">
+          </div>
+          <div class="pt-3 border-t border-outline-variant/30 text-[11px] font-semibold text-secondary">
             High-Capacity Casualty Evacuation
           </div>
-</div>
-<!-- Config 04 -->
-<div class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/50 space-y-3 shadow-sm hover:border-primary transition-colors flex flex-col justify-between">
-<div class="space-y-2">
-<span class="text-[10px] font-bold uppercase px-2 py-0.5 bg-surface-container text-on-surface rounded">Config 04</span>
-<h3 class="font-bold text-sm text-on-surface font-headline">BLS-to-ALS Modular Upgrade Ready</h3>
-<p class="text-xs text-on-surface-variant leading-relaxed">
-              1 Stretcher + 3 Swivel Paramedic Seats + Wall mounts pre-wired for multipara cardiac monitor, transport ventilator, and infusion syringe pumps.
+        </div>
+        <!-- Config 04 -->
+        <div
+          class="p-5 rounded-xl bg-surface-container-lowest border border-outline-variant/50 space-y-3 shadow-sm hover:border-primary transition-colors flex flex-col justify-between">
+          <div class="space-y-2">
+            <span
+              class="text-[10px] font-bold uppercase px-2 py-0.5 bg-surface-container text-on-surface rounded">Config
+              04</span>
+            <h3 class="font-bold text-sm text-on-surface font-headline">BLS-to-ALS Modular Upgrade Ready</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              1 Stretcher + 3 Swivel Paramedic Seats + Wall mounts pre-wired for multipara cardiac monitor, transport
+              ventilator, and infusion syringe pumps.
             </p>
-</div>
-<div class="pt-3 border-t border-outline-variant/30 text-[11px] font-semibold text-secondary">
+          </div>
+          <div class="pt-3 border-t border-outline-variant/30 text-[11px] font-semibold text-secondary">
             Future-Proof ALS Architecture
           </div>
-</div>
-</div>
-</section>
+        </div>
+      </div>
+    </section>
   </main>
-  <!-- ======================================================== -->
-  <!-- FULL-WIDTH IMAGE-ONLY SEAMLESS MARQUEE REEL SECTION     -->
-  <!-- ======================================================== -->
-  <section
-    class="w-full bg-zinc-950 text-white py-14 lg:py-20 border-y border-zinc-800 relative overflow-hidden select-none"
-    id="fullwidth-reel-section">
-    <!-- Section Header Container -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-      <div class="space-y-2">
-        <div
-          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 text-zinc-300 text-xs font-mono font-semibold border border-zinc-700/60 shadow-xs">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span class="">VEHICLE ENGINEERING PHOTOGRAPHIC INSPECTION</span>
-        </div>
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white">
-          Vehicle Engineering Inspection Reel
-        </h2>
-        <p class="text-sm text-zinc-400 max-w-2xl leading-relaxed">
-          Full-viewport continuous photographic gallery. Hover over any frame to pause and inspect high-resolution
-          chassis and interior engineering details.
-        </p>
-      </div>
-    </div>
-    <!-- Full-Width Seamless Loop Marquee Container -->
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <div class="w-full relative overflow-hidden marquee-container">
-      <!-- Subtle Gradient Fades on Left & Right Viewport Edges -->
-      <div
-        class="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 z-20 bg-gradient-to-r from-zinc-950 to-transparent">
-      </div>
-      <div
-        class="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 z-20 bg-gradient-to-l from-zinc-950 to-transparent">
-      </div>
-      <!-- Infinite Scrolling Marquee Track (Double clone set for flawless continuous loop) -->
-      <div class="marquee-track flex gap-6 px-4">
-        <!-- SET 1 -->
-        <div class="flex gap-6 shrink-0">
-          <!-- Card 1: Exterior Front 3/4 -->
-          <div
-            class="w-[340px] sm:w-[460px] lg:w-[540px] aspect-[16/10] shrink-0 rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-900 shadow-2xl transition-all duration-300 hover:border-zinc-500 hover:shadow-zinc-800/40 cursor-pointer group"
-            onclick="openLightbox(0)">
-            <img alt="Sanatan SUNLINER WIDER 5200WB - Exterior 3/4 Profile"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="img/tata-winger-ambulance/tata-winger-21.JPG">
-          </div>
-          <!-- Card 2: Interior Passenger Saloon -->
-          <div
-            class="w-[340px] sm:w-[460px] lg:w-[540px] aspect-[16/10] shrink-0 rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-900 shadow-2xl transition-all duration-300 hover:border-zinc-500 hover:shadow-zinc-800/40 cursor-pointer group"
-            onclick="openLightbox(1)">
-            <img alt="Sanatan SUNLINER WIDER - Interior Passenger Saloon &amp; Gangway"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="img/tata-winger-ambulance/tata-winger-41.JPG">
-          </div>
-          <!-- Card 3: Driver Cockpit & Telemetry -->
-          <div
-            class="w-[340px] sm:w-[460px] lg:w-[540px] aspect-[16/10] shrink-0 rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-900 shadow-2xl transition-all duration-300 hover:border-zinc-500 hover:shadow-zinc-800/40 cursor-pointer group"
-            onclick="openLightbox(2)">
-            <img alt="Sanatan SUNLINER WIDER - Driver Ergonomics &amp; Console"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="img/tata-winger-ambulance/tata-winger-51.JPG">
-          </div>
-          <!-- Card 4: Rear Emergency Gate -->
-          <div
-            class="w-[340px] sm:w-[460px] lg:w-[540px] aspect-[16/10] shrink-0 rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-900 shadow-2xl transition-all duration-300 hover:border-zinc-500 hover:shadow-zinc-800/40 cursor-pointer group"
-            onclick="openLightbox(3)">
-            <img alt="Sanatan SUNLINER WIDER - AIS-052 Rear Emergency Gate"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="img/tata-winger-ambulance/tata-winger-61.JPG">
-          </div>
-        </div>
-        <!-- SET 2 (Duplicate clone for seamless infinite continuity) -->
-        <div aria-hidden="true" class="flex gap-6 shrink-0">
-          <!-- Card 1 Duplicate: Exterior Front 3/4 -->
-          <div
-            class="w-[340px] sm:w-[460px] lg:w-[540px] aspect-[16/10] shrink-0 rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-900 shadow-2xl transition-all duration-300 hover:border-zinc-500 hover:shadow-zinc-800/40 cursor-pointer group"
-            onclick="openLightbox(0)">
-            <img alt="Sanatan SUNLINER WIDER 5200WB - Exterior 3/4 Profile"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="img/tata-winger-ambulance/tata-winger-71.JPG">
-          </div>
-          <!-- Card 2 Duplicate: Interior Passenger Saloon -->
-          <div
-            class="w-[340px] sm:w-[460px] lg:w-[540px] aspect-[16/10] shrink-0 rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-900 shadow-2xl transition-all duration-300 hover:border-zinc-500 hover:shadow-zinc-800/40 cursor-pointer group"
-            onclick="openLightbox(1)">
-            <img alt="Sanatan SUNLINER WIDER - Interior Passenger Saloon &amp; Gangway"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="img/tata-winger-ambulance/tata-winger-81.JPG">
-          </div>
-          <!-- Card 3 Duplicate: Driver Cockpit & Telemetry -->
-          <div
-            class="w-[340px] sm:w-[460px] lg:w-[540px] aspect-[16/10] shrink-0 rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-900 shadow-2xl transition-all duration-300 hover:border-zinc-500 hover:shadow-zinc-800/40 cursor-pointer group"
-            onclick="openLightbox(2)">
-            <img alt="Sanatan SUNLINER WIDER - Driver Ergonomics &amp; Console"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="img/tata-winger-ambulance/tata-winger-91.JPG">
-          </div>
-          <!-- Card 4 Duplicate: Rear Emergency Gate -->
-          <div
-            class="w-[340px] sm:w-[460px] lg:w-[540px] aspect-[16/10] shrink-0 rounded-2xl overflow-hidden border border-zinc-800/80 bg-zinc-900 shadow-2xl transition-all duration-300 hover:border-zinc-500 hover:shadow-zinc-800/40 cursor-pointer group"
-            onclick="openLightbox(3)">
-            <img alt="Sanatan SUNLINER WIDER - AIS-052 Rear Emergency Gate"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="img/tata-winger-ambulance/tata-winger-101.JPG">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
- 
 
 
 
   <!-- Footer (Shared Component) -->
-        <footer class="text-on-primary border-t border-primary-container bg-dark-textured bg-black" id="contact">
+  <footer class="text-on-primary border-t border-primary-container bg-dark-textured bg-black" id="contact">
     <div class="max-w-7xl mx-auto  pt-16 px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
         <!-- Credential 1 -->
@@ -1166,16 +1035,19 @@
             </div>
             <div class="flex flex-col">
               <span class="font-heading font-black text-lg tracking-tight flex items-center text-[#fff]">
-            SKS AUTOMOTIVE PVT. LTD.
+                SKS AUTOMOTIVE PVT. LTD.
               </span>
               <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold -mt-3">SANATAN GROUP</span>
             </div>
           </a>
         </div>
         <p class="text-body-sm text-chrome-metallic leading-relaxed">
-          SKS AUTOMOTIVE PVT. LTD. is a sister concern company of SANATAN GROUP, a flagship commercial vehicle body building entity of the prestigious Sanatan Group. We bridge raw powertrain chassis, passenger-first transport solutions. From heavy-duty city route buses to mission-critical mobile ICUs and specialized disaster relief vehicles.
+          SKS AUTOMOTIVE PVT. LTD. is a sister concern company of SANATAN GROUP, a flagship commercial vehicle body
+          building entity of the prestigious Sanatan Group. We bridge raw powertrain chassis, passenger-first transport
+          solutions. From heavy-duty city route buses to mission-critical mobile ICUs and specialized disaster relief
+          vehicles.
         </p>
-        
+
         <div>
           <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-2">
             Plant &amp; Works Location
@@ -1183,12 +1055,12 @@
           <p class="text-body-sm text-chrome-metallic leading-relaxed mb-3">
             <strong class="text-white">Factory & Headquarters</strong><br />
             Khasra No. 80/2/1, Village Bardari,<br />
-             Super Corridor, Indore - 453111, MP
+            Super Corridor, Indore - 453111, MP
           </p>
           <p class="text-body-sm text-chrome-metallic leading-relaxed mb-3">
             <strong class="text-white">Corporate Address</strong><br />
             Survey No 81/2, Bardari, Super Corridor,<br />
-             Sanwer Road, Indore – 453551, MP
+            Sanwer Road, Indore – 453551, MP
           </p>
 
         </div>
@@ -1200,21 +1072,24 @@
         <h4 class="text-sm font-bold text-white uppercase tracking-wider">Quick Links</h4>
         <ul class="space-y-2.5 text-sm">
           <li><a href="index.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Home</a></li>
-          <li><a href="aboutus.html" class="text-chrome-metallic hover:text-on-primary transition-colors">About Us</a></li>
-          <li><a href="product-facilities.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Product Facilities</a></li>
+          <li><a href="aboutus.html" class="text-chrome-metallic hover:text-on-primary transition-colors">About Us</a>
+          </li>
+          <li><a href="product-facilities.html"
+              class="text-chrome-metallic hover:text-on-primary transition-colors">Product Facilities</a></li>
           <li><a href="ambulances.html"
               class="text-chrome-metallic hover:text-on-primary transition-colors">Ambulances</a></li>
           <li><a href="staff-buses.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Staff &
               Route Bus</a></li>
           <li><a href="school-buses.html" class="text-chrome-metallic hover:text-on-primary transition-colors">School
               Bus</a></li>
-          <li><a href="coming-soon.html" class="text-chrome-metallic hover:text-on-primary transition-colors">FAQ</a></li>
+          <li><a href="coming-soon.html" class="text-chrome-metallic hover:text-on-primary transition-colors">FAQ</a>
+          </li>
           <li><a href="after-sales.html" class="text-chrome-metallic hover:text-on-primary transition-colors">After
               Sales</a></li>
           <li><a href="contact-us.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Contact</a>
           </li>
-          <li><a href="coming-soon.html"
-              class="text-chrome-metallic hover:text-on-primary transition-colors">Career</a></li>
+          <li><a href="coming-soon.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Career</a>
+          </li>
         </ul>
 
       </div>
@@ -1244,7 +1119,8 @@
               href="maruti-suzuki-eeco-va.html">Maruti Suzuki Eeco VA Ambulance</a></li> -->
           <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
               href="maruti-suzuki-eeco-va-pvt.html">Maruti Suzuki Eeco PTV Ambulance</a></li>
-          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors" href="mitr-ambulance.html">MITR Ambulance</a></li>
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors" href="mitr-ambulance.html">MITR
+              Ambulance</a></li>
         </ul>
       </div>
       <!-- Corporate & Factory Works (Col 3) -->
@@ -1255,17 +1131,19 @@
             Contact / RFQ
           </h4>
           <ul class="space-y-1 text-body-sm">
-             <li class="flex items-center gap-2 text-chrome-metallic">
+            <li class="flex items-center gap-2 text-chrome-metallic">
               <span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="call">call</span>
-              <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal" href="tel:+919243561550">
-              <span class="text-white font-medium">+91 92435 61550</span></a>
+              <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
+                href="tel:+919243561550">
+                <span class="text-white font-medium">+91 92435 61550</span></a>
             </li>
             <li class="flex items-center gap-2 text-chrome-metallic">
               <span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="call">call</span>
-              <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal" href="tel:+919201837575">
-              <span class="text-white font-medium">+91 92018 37575</span></a>
+              <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
+                href="tel:+919201837575">
+                <span class="text-white font-medium">+91 92018 37575</span></a>
             </li>
-           
+
             <li class="flex items-center gap-2 text-chrome-metallic">
               <span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="mail">mail</span>
               <a class="hover:underline" href="mailto:sales.skssanatan@gmail.com">sales.skssanatan@gmail.com</a>
@@ -1324,7 +1202,8 @@
     <!-- Copyright Sub-strip -->
     <div class="border-t border-subtle-border/10 py-6 text-center text-xs text-chrome-metallic px-6">
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 px-7">
-        <span>© 2026 SKS AUTOMOTIVE PVT. LTD. Pvt Ltd (Sanatan Group). All Rights Reserved. ISO 9001:2015 &amp; ARAI Certified
+        <span>© 2026 SKS AUTOMOTIVE PVT. LTD. Pvt Ltd (Sanatan Group). All Rights Reserved. ISO 9001:2015 &amp; ARAI
+          Certified
           Body Builder.</span>
         <div class="flex gap-4">
           <!-- <a class="hover:underline" href="#">AIS-052 Compliance</a>
@@ -1344,11 +1223,11 @@
     <div class="relative w-full max-w-5xl mx-4 sm:mx-8 h-[90vh] flex flex-col justify-between"
       onclick="event.stopPropagation()">
       <!-- Header -->
-       <button aria-label="Close Lightbox"
-          class=" absolute right-2 -top-2 sm:right-4 z-30 w-9 h-9 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white flex items-center justify-center"
-          onclick="closeLightbox()">
-          <span class="material-symbols-outlined text-2xl">close</span>
-        </button>
+      <button aria-label="Close Lightbox"
+        class=" absolute right-2 -top-2 sm:right-4 z-30 w-9 h-9 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white flex items-center justify-center"
+        onclick="closeLightbox()">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
       <!-- <div
         class="flex items-center justify-between py-3 px-5 bg-zinc-900/90 rounded-2xl border border-zinc-800 text-white">
         <div class="flex items-center gap-3">
@@ -1378,8 +1257,7 @@
         <div class="w-full h-full flex items-center justify-center p-2">
           <img alt="Enlarged inspection perspective"
             class="max-w-full max-h-full object-contain rounded-xl shadow-2xl transition-opacity duration-200"
-            id="lightbox-main-img"
-            src="img/tata-3600-school-bus/tata-3600-schoolbus-17.jpg">
+            id="lightbox-main-img" src="img/tata-3600-school-bus/tata-3600-schoolbus-17.jpg">
         </div>
         <button aria-label="Next"
           class="absolute right-2 sm:right-4 z-30 w-11 h-11 rounded-full bg-black/70 hover:bg-black text-white flex items-center justify-center border border-white/20 transition-all"
@@ -1433,7 +1311,7 @@
     });
   </script>
   <!-- Simple Filter Interaction Script -->
-   <script data-purpose="accordion-handler">
+  <script data-purpose="accordion-handler">
     document.addEventListener('DOMContentLoaded', () => {
       const triggers = document.querySelectorAll('.accordion-trigger');
 
@@ -1468,26 +1346,26 @@
       });
     });
   </script>
-      <!-- Simple Client Interactions Script -->
-    <script>
-        function selectConfig(configName) {
-            const select = document.getElementById('rfq-config-select');
-            if (select) {
-                for (let i = 0; i < select.options.length; i++) {
-                    if (select.options[i].text.includes(configName.split(' - ')[0])) {
-                        select.selectedIndex = i;
-                        break;
-                    }
-                }
-            }
-            const rfqSection = document.getElementById('rfq-section');
-            if (rfqSection) {
-                rfqSection.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
+  <!-- Simple Client Interactions Script -->
+  <script>
+    function selectConfig(configName) {
+      const select = document.getElementById('rfq-config-select');
+      if (select) {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].text.includes(configName.split(' - ')[0])) {
+            select.selectedIndex = i;
+            break;
+          }
         }
-    </script>
+      }
+      const rfqSection = document.getElementById('rfq-section');
+      if (rfqSection) {
+        rfqSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    }
+  </script>
   <script>
     // Vehicle visual perspectives data
     const vehicleViews = [
@@ -1535,9 +1413,9 @@
       const tabs = document.querySelectorAll('.hero-tab-btn');
       tabs.forEach((tab, i) => {
         if (i === idx) {
-          tab.className = 'hero-tab-btn flex items-center gap-2 rounded-lg bg-surface-container text-xs font-semibold text-on-surface border border-primary transition-all text-left';          
+          tab.className = 'hero-tab-btn flex items-center gap-2 rounded-lg bg-surface-container text-xs font-semibold text-on-surface border border-primary transition-all text-left';
         } else {
-          tab.className = 'hero-tab-btn flex items-center gap-2 rounded-lg hover:bg-surface-container-low text-xs font-medium text-on-surface-variant border border-outline-variant transition-all text-left';          
+          tab.className = 'hero-tab-btn flex items-center gap-2 rounded-lg hover:bg-surface-container-low text-xs font-medium text-on-surface-variant border border-outline-variant transition-all text-left';
         }
       });
     }
@@ -1656,45 +1534,10 @@
         if (modal && !modal.classList.contains('hidden')) lightboxPrev();
       }
     });
-    
+
   </script>
-  <!-- <aside aria-label="Quick Contact Actions"
-    class="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-2.5 items-end pr-2 md:pr-4 pointer-events-none">
+  
 
-    <a aria-label="Chat on WhatsApp"
-      class="pointer-events-auto group flex items-center bg-[#075E54] hover:bg-[#128C7E] text-white p-2.5 md:p-3 rounded-full shadow-xl transition-all duration-700 hover:shadow-2xl hover:-translate-x-1 border border-white/20"
-      href="https://wa.me/917723018035" rel="noopener noreferrer" target="_blank"><span
-        class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-label-md text-xs font-semibold px-0 group-hover:px-2">WhatsApp
-        Inquiry</span><span class="flex items-center justify-center w-6 h-6"><svg
-          class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
-          <path
-            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
-          </path>
-        </svg></span></a>
-
-        <a aria-label="Call Sales Desk directly"
-      class="pointer-events-auto group flex items-center bg-[#0B192C] hover:bg-[#1E3E62] text-white px-3.5 py-2.5 rounded-full shadow-xl transition-all duration-700 hover:shadow-2xl hover:-translate-x-1 border border-white/20"
-      href="tel:+917723018035"><span
-        class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-label-md text-xs font-semibold px-0 group-hover:px-2">Direct
-        Call: +91 77230 18035</span><span class="material-symbols-outlined text-xl text-white"
-        data-icon="call">call</span></a>
-        
-        <a aria-label="Jump to RFQ Form"
-      class="pointer-events-auto group flex items-center bg-amber-600 hover:bg-amber-500 text-white px-3.5 py-2.5 rounded-full shadow-xl transition-all duration-700 hover:shadow-2xl hover:-translate-x-1 border border-white/20"
-      href="#rfq-section"><span
-        class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-label-md text-xs font-semibold px-0 group-hover:px-2">Quick
-        RFQ Estimator</span><span class="material-symbols-outlined text-xl text-white"
-        data-icon="request_quote">request_quote</span></a>
-      
-      </aside>
-      <button aria-label="Back to Top"
-    class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-[#0B192C] text-white flex items-center justify-center shadow-xl border border-slate-700 hover:bg-slate-800 hover:-translate-y-1 transition-all duration-300 group cursor-pointer"
-    onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to Top"><svg
-      class="w-5 h-5 text-white transition-transform group-hover:-translate-y-0.5" fill="none" stroke="currentColor"
-      viewBox="0 0 24 24">
-      <path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
-    </svg></button> -->
- 
 </body>
 
 </html>

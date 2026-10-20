@@ -23,15 +23,13 @@
   <!-- Fonts -->
   <!-- font-awesome -->
   <link rel="stylesheet" href="css/all.min.css">
-  <!-- aos -->
-  <!-- <link rel="stylesheet" href="css/aos.css" /> -->
+ 
   <!-- Tailwind CSS -->
   <script src="scripts/3.4.js"></script>
 
   <script src="scripts/tailwind-config.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
-    
     .sks-outline {
       -webkit-text-stroke: 1px black;
       font-family: sans-serif;
@@ -48,6 +46,56 @@
       vertical-align: middle;
       line-height: 1;
     }
+
+    /* Keyframes for Continuous Seamless Horizontal Marquee */
+    @keyframes marqueeLeft {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes marqueeRight {
+      0% {
+        transform: translateX(-50%);
+      }
+
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marqueeLeft var(--marquee-duration, 38s) linear infinite;
+    }
+
+    .animate-marquee.reverse-direction {
+      animation-name: marqueeRight;
+    }
+
+    .animate-marquee.is-paused {
+      animation-play-state: paused;
+    }
+
+    .marquee-container:hover .animate-marquee.hover-pause {
+      animation-play-state: paused;
+    }
+
+    /* Smooth spec tab transitions */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+
 
     .custom-scroll::-webkit-scrollbar {
       height: 4px;
@@ -291,7 +339,7 @@
 
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary selection:text-white">
   <!-- Top Utilities Strip -->
-<header class="bg-black text-chrome-metallic border-b border-subtle-border/20 text-xs hidden md:block">
+  <header class="bg-black text-chrome-metallic border-b border-subtle-border/20 text-xs hidden md:block">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-2 flex justify-between items-center">
       <div class="flex items-center space-x-5">
         <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
@@ -309,15 +357,15 @@
       </div>
       <div class="flex items-center space-x-3">
         <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
-            href="tel:+919243561550">
-            <span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="call">call</span>
-            +91 92435 61550
-          </a>
+          href="tel:+919243561550">
+          <span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="call">call</span>
+          +91 92435 61550
+        </a>
         <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
           href="tel:+919201837575">
           <span class="material-symbols-outlined text-sm text-secondary-fixed" data-icon="call">call</span>
           +91 92018 37575
-          </a>
+        </a>
       </div>
 
     </div>
@@ -493,11 +541,13 @@
                 <span class="font-heading font-black text-lg tracking-tight flex items-center text-[#000] text-base/6">
                   SKS AUTOMOTIVE PVT. LTD.
                 </span>
-                <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold mt-1">SANATAN GROUP</span>
+                <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold mt-1">SANATAN
+                  GROUP</span>
               </div>
             </a>
           </span>
-          <button id="menu-close-btn" aria-label="Close Menu" class="p-2 text-white hover:text-slate-900 absolute top-6 -right-10">
+          <button id="menu-close-btn" aria-label="Close Menu"
+            class="p-2 text-white hover:text-slate-900 absolute top-6 -right-10">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
@@ -590,8 +640,7 @@
     <!-- Video: object-cover keeps the subject visible at every breakpoint; object-center works for mobile/tablet, object-[center_30%] nudges the focal point slightly up on laptop/desktop to avoid bottom-crop. -->
     <video
       class="w-full mt-14 md:mt-0 h-[56vw] min-h-[300px] sm:h-[52vw] md:h-[80vh] lg:h-[90vh] object-cover object-center lg:object-[center_30%]"
-      src="sks-video.mp4" autoplay="" muted="" loop=""
-      playsinline="" poster="">
+      src="sks-video.mp4" autoplay="" muted="" loop="" playsinline="" poster="">
     </video>
 
     <!-- Gradient layer -->
@@ -683,11 +732,17 @@
           </h2>
           <p class="text-body-md text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-duration="900"
             data-aos-delay="200">
-            SKS AUTOMOTIVE PVT. LTD. is a sister concern company of SANATAN GROUP. We are dedicated to engineering world-class emergency and specialty vehicles that set the benchmark for safety, reliability, and innovation. With a strong legacy in automotive design and fabrication, we specialize in manufacturing a complete range of route and school buses and ambulances to cater to diverse service needs. Our state-of-the-art manufacturing facility, backed by advanced technology and a skilled team, ensures every vehicle meets international quality standards. 
+            SKS AUTOMOTIVE PVT. LTD. is a sister concern company of SANATAN GROUP. We are dedicated to engineering
+            world-class emergency and specialty vehicles that set the benchmark for safety, reliability, and innovation.
+            With a strong legacy in automotive design and fabrication, we specialize in manufacturing a complete range
+            of route and school buses and ambulances to cater to diverse service needs. Our state-of-the-art
+            manufacturing facility, backed by advanced technology and a skilled team, ensures every vehicle meets
+            international quality standards.
           </p>
           <p class="text-body-md text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-duration="900"
             data-aos-delay="300">
-            From heavy-duty city route buses or school buses every unit undergoes stringent rollover structural testing, computerized anti-corrosion chemical treatment,
+            From heavy-duty city route buses or school buses every unit undergoes stringent rollover structural testing,
+            computerized anti-corrosion chemical treatment,
             and precision fitment.
           </p>
           <!-- 3 Strategic Pillars -->
@@ -723,36 +778,39 @@
         </div>
         <!-- Right Column: Visual Industrial Showcase -->
         <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-  <div class="space-y-4">
-    <div class="rounded-lg overflow-hidden border border-subtle-border shadow-sm h-52 bg-slate-100"
-      data-aos="fade-up" data-aos-duration="900">
-      <img class="w-full h-full object-cover"
-        data-alt="Automotive body assembly line workers installing reinforced passenger seat frames inside a modern bus cabin. Clean high-bay factory lights illuminate the sparks from nearby precision MIG welding stations, showcasing industrial manufacturing discipline in an automotive engineering plant."
-        src="img/shower-test.png" />
-    </div>
-    <div class="p-5 rounded-lg bg-black text-surface-container-lowest border border-primary-container"
-      data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
-      <span class="text-secondary font-display-hero font-black text-3xl">100%</span>
-      <p class="text-label-md font-bold mt-1 text-white">Monsoon Shower Tested</p>
-      <p class="text-body-sm text-chrome-metallic mt-1">High-pressure perimeter nozzles ensure zero cockpit seepage.</p>
-    </div>
-  </div>
-  <div class="space-y-4 pt-0 sm:pt-6">
-    <div class="p-5 rounded-lg bg-surface-container-low border border-subtle-border" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-      <div class="flex items-center gap-2 text-secondary font-bold mb-2">
-        <span class="material-symbols-outlined text-xl" data-icon="architecture">architecture</span>
-        <span class="text-sm font-headline-sm">CAD Engineering</span>
-      </div>
-      <p class="text-body-sm text-on-surface-variant">Digitally optimized roll-over safety hoops conforming to AIS-031 standards.</p>
-    </div>
-    <div class="rounded-lg overflow-hidden border border-subtle-border shadow-sm h-60 bg-slate-100"
-      data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
-      <img class="w-full h-full object-cover"
-        data-alt="Industrial vacuum thermoforming ABS manufacturing process for heavy vehicle dashboards and bus front fascia components. Industrial machinery with operators in high-visibility safety jackets inspecting a large freshly formed automotive component in an engineering workshop."
-        src="img/blueprint.png" />
-    </div>
-  </div>
-</div>
+          <div class="space-y-4">
+            <div class="rounded-lg overflow-hidden border border-subtle-border shadow-sm h-52 bg-slate-100"
+              data-aos="fade-up" data-aos-duration="900">
+              <img class="w-full h-full object-cover"
+                data-alt="Automotive body assembly line workers installing reinforced passenger seat frames inside a modern bus cabin. Clean high-bay factory lights illuminate the sparks from nearby precision MIG welding stations, showcasing industrial manufacturing discipline in an automotive engineering plant."
+                src="img/shower-test.png" />
+            </div>
+            <div class="p-5 rounded-lg bg-black text-surface-container-lowest border border-primary-container"
+              data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+              <span class="text-secondary font-display-hero font-black text-3xl">100%</span>
+              <p class="text-label-md font-bold mt-1 text-white">Monsoon Shower Tested</p>
+              <p class="text-body-sm text-chrome-metallic mt-1">High-pressure perimeter nozzles ensure zero cockpit
+                seepage.</p>
+            </div>
+          </div>
+          <div class="space-y-4 pt-0 sm:pt-6">
+            <div class="p-5 rounded-lg bg-surface-container-low border border-subtle-border" data-aos="fade-up"
+              data-aos-duration="900" data-aos-delay="100">
+              <div class="flex items-center gap-2 text-secondary font-bold mb-2">
+                <span class="material-symbols-outlined text-xl" data-icon="architecture">architecture</span>
+                <span class="text-sm font-headline-sm">CAD Engineering</span>
+              </div>
+              <p class="text-body-sm text-on-surface-variant">Digitally optimized roll-over safety hoops conforming to
+                AIS-031 standards.</p>
+            </div>
+            <div class="rounded-lg overflow-hidden border border-subtle-border shadow-sm h-60 bg-slate-100"
+              data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+              <img class="w-full h-full object-cover"
+                data-alt="Industrial vacuum thermoforming ABS manufacturing process for heavy vehicle dashboards and bus front fascia components. Industrial machinery with operators in high-visibility safety jackets inspecting a large freshly formed automotive component in an engineering workshop."
+                src="img/blueprint.png" />
+            </div>
+          </div>
+        </div>
       </div>
       <div
         class="mt-8 bg-white rounded-3xl p-5 border border-slate-200/90 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6"
@@ -762,15 +820,17 @@
           <p class="text-sm text-slate-600">Over 35+ years of engineering specialization</p>
         </div>
         <div class="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0 w-full sm:w-auto">
-  <a class="w-full sm:w-auto text-center px-5 py-3 text-xs font-bold uppercase tracking-wider text-slate-800 bg-slate-100 hover:bg-slate-200 rounded-xl transition-all" href="#specs">
-    About SKS AUTOMOTIVE PVT. LTD.
-  </a>
-  <a class="w-full sm:w-auto text-center px-6 py-3 text-xs font-bold uppercase tracking-wider text-white bg-slate-900 hover:bg-slate-800 rounded-xl shadow-sm transition-all" href="contact-us.html">
-    contact us
-  </a>
-</div>
+          <a class="w-full sm:w-auto text-center px-5 py-3 text-xs font-bold uppercase tracking-wider text-slate-800 bg-slate-100 hover:bg-slate-200 rounded-xl transition-all"
+            href="#specs">
+            About SKS AUTOMOTIVE PVT. LTD.
+          </a>
+          <a class="w-full sm:w-auto text-center px-6 py-3 text-xs font-bold uppercase tracking-wider text-white bg-slate-900 hover:bg-slate-800 rounded-xl shadow-sm transition-all"
+            href="contact-us.html">
+            contact us
+          </a>
+        </div>
 
-        
+
       </div>
 
     </div>
@@ -791,7 +851,8 @@
         </div>
         <div class="lg:col-span-6">
           <p class="text-slate-600 leading-relaxed" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
-            Discover the core strengths that make SKS AUTOMOTIVE PVT. LTD. a trusted leader in ambulance and medical vehicle
+            Discover the core strengths that make SKS AUTOMOTIVE PVT. LTD. a trusted leader in ambulance and medical
+            vehicle
             manufacturing across India and beyond.
           </p>
         </div>
@@ -873,11 +934,11 @@
         </div>
 
       </div>
-     
+
     </div>
   </section>
 
-  <section id="services" class="lg:py-28 bg-white">
+  <section id="services" class="lg:pt-28 bg-slate-surface">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -893,111 +954,311 @@
           patient care in every critical moment.</p>
       </div>
 
+
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <!-- Service busesd 1 -->
-        <div
-          class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between"
-          data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-          <div>
-            <div class="w-14 h-14 bg-secondary rounded-2xl flex text-white items-center justify-center text-2xl mb-6">
-              <i class="fa-solid fa-kit-medical"></i>
-            </div>
-            <h3 class="font-heading text-xl font-bold text-brand-dark mb-3">Basic Life Support (BLS)</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-              Essential emergency transport equipped with vital patient monitoring setups, oxygen delivery systems, and
-              ergonomic stretcher layouts for routine emergency response.
-            </p>
+        <div class=" border-t border-surface-container max-w-4xl mx-auto flex flex-wrap items-center justify-between gap-4 text-xs">
+          <!-- Marquee Telemetry Actions -->
+          <div class="flex items-center gap-2">
+            <!-- <span></span>
+            <span></span> -->
+            
+            <!-- <button
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-mono transition-colors text-xs border border-outline-variant"
+              id="toggleSpeedBtn" title="Toggle Scroll Speed" type="button">
+              <span class="material-symbols-outlined text-sm">speed</span>
+              <span id="speedText" class="">1.0X CADENCE</span>
+            </button>
+            <button
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-mono transition-colors text-xs border border-outline-variant"
+              id="reverseDirBtn" title="Invert Direction" type="button">
+              <span class="material-symbols-outlined text-sm">swap_horiz</span>
+              <span class="">DIRECTION</span>
+            </button> -->
+            <button
+              class="mb-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-mono transition-colors text-xs border border-outline-variant rounded-xl border border-surface-container-high"
+              id="togglePlayBtn" title="Toggle Auto Scroll" type="button">
+              <span class="material-symbols-outlined text-sm" id="playPauseIcon">pause</span>
+              <span id="playPauseText" class="">PAUSE</span>
+            </button>
           </div>
-          <a href="contact-us.html"
-            class="inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:text-black">
-            Read More / Inquire <i class="fa-solid fa-arrow-right text-xs"></i>
-          </a>
-        </div>
-
-        <!-- Service busesd 2 -->
-        <div
-          class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between"
-          data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
-          <div>
-            <div class="w-14 h-14 bg-secondary rounded-2xl flex text-white items-center justify-center text-2xl mb-6">
-              <i class="fa-solid fa-heart-pulse"></i>
-            </div>
-            <h3 class="font-heading text-xl font-bold text-brand-dark mb-3">Advanced Life Support (ALS)</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-              High-dependency ICU-on-wheels engineered for critical care. Includes diagnostic monitors, ventilators,
-              infusion pumps, and custom power management.
-            </p>
-          </div>
-          <a href="contact-us.html"
-            class="inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:text-black">
-            Read More / Inquire <i class="fa-solid fa-arrow-right text-xs"></i>
-          </a>
-        </div>
-
-        <!-- Service busesd 3 -->
-        <div
-          class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between"
-          data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
-          <div>
-            <div class="w-14 h-14 bg-secondary rounded-2xl flex text-white items-center justify-center text-2xl mb-6">
-              <i class="fa-solid fa-truck-medical"></i>
-            </div>
-            <h3 class="font-heading text-xl font-bold text-brand-dark mb-3">Mobile Medical Units</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-              Fully self-contained mobile health clinics featuring diagnostic equipment, consultation areas, and
-              pharmacy storage designed for rural and community healthcare deployment.
-            </p>
-          </div>
-          <a href="contact-us.html"
-            class="inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:text-black">
-            Read More / Inquire <i class="fa-solid fa-arrow-right text-xs"></i>
-          </a>
-        </div>
-
-        <!-- Service busesd 4 -->
-        <div
-          class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between"
-          data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
-          <div>
-            <div class="w-14 h-14 bg-secondary rounded-2xl flex text-white items-center justify-center text-2xl mb-6">
-              <i class="fa-solid fa-paw"></i>
-            </div>
-            <h3 class="font-heading text-xl font-bold text-brand-dark mb-3">Veterinary Ambulances</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-              Custom specialized rescue and medical vehicles outfitted with animal handling gear, surgical equipment,
-              and heavy-duty sanitation flooring.
-            </p>
-          </div>
-          <a href="contact-us.html"
-            class="inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:text-black">
-            Read More / Inquire <i class="fa-solid fa-arrow-right text-xs"></i>
-          </a>
-        </div>
-
-        <!-- Service busesd 5 -->
-        <div
-          class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-2"
-          data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
-          <div>
-            <div class="w-14 h-14 bg-secondary rounded-2xl flex text-white items-center justify-center text-2xl mb-6">
-              <i class="fa-solid fa-wheelchair"></i>
-            </div>
-            <h3 class="font-heading text-xl font-bold text-brand-dark mb-3">Patient Transport Vehicles</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-              Designed for comfortable non-emergency transport, accommodating mobility aids, wheel-chairs, and seating
-              configurations for long-distance patient comfort and safety.
-            </p>
-          </div>
-          <a href="contact-us.html"
-            class="inline-flex items-center gap-2 text-sm font-semibold text-secondary hover:text-black">
-            Read More / Inquire <i class="fa-solid fa-arrow-right text-xs"></i>
-          </a>
         </div>
 
       </div>
 
-      
+
+    </div>
+  </section>
+
+
+  <section class="lg:mb-28 w-full overflow-hidden pt-4 marquee-container bg-slate-surface border-surface-container">
+
+    <div class="relative w-full">
+      <!-- Subtle Side Vignettes for Infinite Depth Blend -->
+      <div
+        class="absolute left-0 top-0 bottom-0 w-16 lg:w-32 bg-gradient-to-r from-surface-container-low to-transparent z-20 pointer-events-none">
+      </div>
+      <div
+        class="absolute right-0 top-0 bottom-0 w-16 lg:w-32 bg-gradient-to-l from-surface-container-low to-transparent z-20 pointer-events-none">
+      </div>
+      <!-- Infinite Loop Track (Two identical sets of the 5 cards for continuous 100% loop) -->
+      <div class="animate-marquee hover-pause flex items-stretch py-4" id="marqueeTrack">
+        <!-- ==================== LOOP SET 1 ==================== -->
+        <!-- 1. Basic Life Support (BLS) -->
+        <article
+          class="w-[360px] sm:w-[420px] mx-3 flex-shrink-0 bg-slate-surface rounded-xl border border-surface-container-high shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+          <div>
+            <div class="relative h-56 w-full overflow-hidden bg-surface-container">
+              <img alt="Basic Life Support BLS Ambulance"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="img/tata-winger.png">
+            </div>
+            <div class="px-6 pt-6 pb-2">
+              <h3 class="text-xl font-bold text-on-surface tracking-tight mb-2">
+                Basic Life Support (BLS)
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Essential emergency transport equipped with vital patient monitoring setups, oxygen delivery systems,
+                and ergonomic stretcher layouts for routine emergency response.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-secondary transition-colors group/link"
+              href="contact-us.html">
+              <span class="">Read More / Inquire</span>
+              <span
+                class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+        <!-- 2. Advanced Life Support (ALS) -->
+        <article
+          class="w-[360px] sm:w-[420px] mx-3 flex-shrink-0 bg-slate-surface rounded-xl border border-surface-container-high shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+          <div>
+            <div class="relative h-56 w-full overflow-hidden bg-surface-container">
+              <img alt="Basic Life Support BLS Ambulance"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="img/advanced-life-support.png">
+            </div>
+            <div class="px-6 pt-6 pb-2">
+              <h3 class="text-xl font-bold text-on-surface tracking-tight mb-2">
+                Advanced Life Support (ALS)
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                High-dependency ICU-on-wheels engineered for critical care. Includes diagnostic monitors, ventilators,
+                infusion pumps, and custom power management.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-secondary transition-colors group/link"
+              href="contact-us.html">
+              <span class="">Read More / Inquire</span>
+              <span
+                class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+        <!-- 3. Mobile Medical Units (MMU) -->
+        <article
+          class="w-[360px] sm:w-[420px] mx-3 flex-shrink-0 bg-slate-surface rounded-xl border border-surface-container-high shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+          <div>
+            <div class="relative h-56 w-full overflow-hidden bg-surface-container">
+              <img alt="Basic Life Support BLS Ambulance"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="img/mobile-medical-unit.png">
+            </div>
+            <div class="px-6 pt-6 pb-2">
+              <h3 class="text-xl font-bold text-on-surface tracking-tight mb-2">
+                Mobile Medical Units
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Fully self-contained mobile health clinics featuring diagnostic equipment, consultation areas, and
+                pharmacy storage designed for rural and community healthcare deployment.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-secondary transition-colors group/link"
+              href="contact-us.html">
+              <span class="">Read More / Inquire</span>
+              <span
+                class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+        <!-- 4. Veterinary Ambulances -->
+        <article
+          class="w-[360px] sm:w-[420px] mx-3 flex-shrink-0 bg-slate-surface rounded-xl border border-surface-container-high shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+          <div>
+            <div class="relative h-56 w-full overflow-hidden bg-surface-container">
+              <img alt="Basic Life Support BLS Ambulance"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="img/force-t2-ambulance/force-t2-ambulance-101.jpeg">
+            </div>
+            <div class="px-6 pt-6 pb-2">
+              <h3 class="text-xl font-bold text-on-surface tracking-tight mb-2">
+                Veterinary Ambulances
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Custom specialized rescue and medical vehicles outfitted with animal handling gear, surgical equipment,
+                and heavy-duty sanitation flooring.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-secondary transition-colors group/link"
+              href="contact-us.html">
+              <span class="">Read More / Inquire</span>
+              <span
+                class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+        <!-- 5. Patient Transport Vehicles -->
+        <article
+          class="w-[360px] sm:w-[420px] mx-3 flex-shrink-0 bg-slate-surface rounded-xl border border-surface-container-high shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+          <div>
+            <div class="relative h-56 w-full overflow-hidden bg-surface-container">
+              <img alt="Basic Life Support BLS Ambulance"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="img/patient-3.png">
+            </div>
+            <div class="px-6 pt-6 pb-2">
+              <h3 class="text-xl font-bold text-on-surface tracking-tight mb-2">
+                Patient Transport Vehicles
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Designed for comfortable non-emergency transport, accommodating mobility aids, wheel-chairs, and seating
+                configurations for long-distance patient comfort and safety.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-secondary transition-colors group/link"
+              href="contact-us.html">
+              <span class="">Read More / Inquire</span>
+              <span
+                class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+        <!-- ==================== LOOP SET 2 (EXACT CLONE FOR SEAMLESS 100% SCROLL) ==================== -->
+        <!-- 1. Basic Life Support (BLS) -->
+        <!-- 2. Advanced Life Support (ALS) -->
+        <article
+          class="w-[360px] sm:w-[420px] mx-3 flex-shrink-0 bg-slate-surface rounded-xl border border-surface-container-high shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+          <div>
+            <div class="relative h-56 w-full overflow-hidden bg-surface-container">
+              <img alt="Basic Life Support BLS Ambulance"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="img/advanced-life-support.png">
+            </div>
+            <div class="px-6 pt-6 pb-2">
+              <h3 class="text-xl font-bold text-on-surface tracking-tight mb-2">
+                Advanced Life Support (ALS)
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                High-dependency ICU-on-wheels engineered for critical care. Includes diagnostic monitors, ventilators,
+                infusion pumps, and custom power management.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-secondary transition-colors group/link"
+              href="contact-us.html">
+              <span class="">Read More / Inquire</span>
+              <span
+                class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+        <!-- 3. Mobile Medical Units (MMU) -->
+        <article
+          class="w-[360px] sm:w-[420px] mx-3 flex-shrink-0 bg-slate-surface rounded-xl border border-surface-container-high shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+          <div>
+            <div class="relative h-56 w-full overflow-hidden bg-surface-container">
+              <img alt="Basic Life Support BLS Ambulance"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="img/mobile-medical-unit.png">
+            </div>
+            <div class="px-6 pt-6 pb-2">
+              <h3 class="text-xl font-bold text-on-surface tracking-tight mb-2">
+                Mobile Medical Units
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Fully self-contained mobile health clinics featuring diagnostic equipment, consultation areas, and
+                pharmacy storage designed for rural and community healthcare deployment.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-secondary transition-colors group/link"
+              href="contact-us.html">
+              <span class="">Read More / Inquire</span>
+              <span
+                class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+        <!-- 4. Veterinary Ambulances -->
+        <article
+          class="w-[360px] sm:w-[420px] mx-3 flex-shrink-0 bg-slate-surface rounded-xl border border-surface-container-high shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+          <div>
+            <div class="relative h-56 w-full overflow-hidden bg-surface-container">
+              <img alt="Basic Life Support BLS Ambulance"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="img/force-t2-ambulance/force-t2-ambulance-101.jpeg">
+            </div>
+            <div class="px-6 pt-6 pb-2">
+              <h3 class="text-xl font-bold text-on-surface tracking-tight mb-2">
+                Veterinary Ambulances
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Custom specialized rescue and medical vehicles outfitted with animal handling gear, surgical equipment,
+                and heavy-duty sanitation flooring.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-secondary transition-colors group/link"
+              href="contact-us.html">
+              <span class="">Read More / Inquire</span>
+              <span
+                class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+        <!-- 5. Patient Transport Vehicles -->
+        <article
+          class="w-[360px] sm:w-[420px] mx-3 flex-shrink-0 bg-slate-surface rounded-xl border border-surface-container-high shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+          <div>
+            <div class="relative h-56 w-full overflow-hidden bg-surface-container">
+              <img alt="Basic Life Support BLS Ambulance"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="img/patient-3.png">
+            </div>
+            <div class="px-6 pt-6 pb-2">
+              <h3 class="text-xl font-bold text-on-surface tracking-tight mb-2">
+                Patient Transport Vehicles
+              </h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Designed for comfortable non-emergency transport, accommodating mobility aids, wheel-chairs, and seating
+                configurations for long-distance patient comfort and safety.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <a class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-secondary transition-colors group/link"
+              href="contact-us.html">
+              <span class="">Read More / Inquire</span>
+              <span
+                class="material-symbols-outlined text-base group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
   <!-- TECHNOLOGY IN ACTION (HORIZONTAL FULL-BLEED ACCORDION) -->
@@ -1005,21 +1266,26 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="max-w-3xl mb-12">
         <div
-          class="inline-flex items-center gap-2 text-on-surface font-mono text-xs font-semibold uppercase tracking-wider mb-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+          class="inline-flex items-center gap-2 text-on-surface font-mono text-xs font-semibold uppercase tracking-wider mb-3"
+          data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
 
           Our Capabilities
         </div>
-        <h2 class="text-3xl lg:text-4xl font-extrabold font-headline text-on-surface tracking-tight mb-4" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+        <h2 class="text-3xl lg:text-4xl font-extrabold font-headline text-on-surface tracking-tight mb-4"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
           What <span class="text-secondary">We Do</span>
         </h2>
-        <p class="text-base text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
-          Delivering innovative, safe school buses, staff-buses, route buses and ambulances custom-built mobility solutions through world-class design, engineering, and
+        <p class="text-base text-on-surface-variant leading-relaxed" data-aos="fade-up" data-aos-duration="700"
+          data-aos-delay="200">
+          Delivering innovative, safe school buses, staff-buses, route buses and ambulances custom-built mobility
+          solutions through world-class design, engineering, and
           manufacturing expertise.
         </p>
       </div>
 
       <div
-        class="horizontal-accordion-container flex flex-col lg:flex-row gap-3 w-full h-auto lg:h-[520px] overflow-hidden select-none" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+        class="horizontal-accordion-container flex flex-col lg:flex-row gap-3 w-full h-auto lg:h-[520px] overflow-hidden select-none"
+        data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
         <!-- 01 Bending Machine -->
         <div
           class="tech-panel group/panel flex-1 lg:flex-[3.5] relative rounded-xl border border-subtle-border overflow-hidden transition-all duration-500 cursor-pointer shadow-sm min-h-[320px] lg:h-full hover:border-on-surface"
@@ -1124,10 +1390,11 @@
                 class="inline-block rounded-md text-secondary font-semibold text-sm uppercase mb-3 aos-init aos-animate"
                 data-aos="fade-up" data-aos-duration="900">AUTOMOTIVE PRODUCT PORTFOLIO</div>
               <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-dark aos-init aos-animate"
-                data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">Built on Engineered to Outlast.<span class="text-secondary"> Uncompromising Safety</span>
+                data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">Built on Engineered to Outlast.<span
+                  class="text-secondary"> Uncompromising Safety</span>
               </h2>
             </div>
-           
+
           </div>
         </div>
         <!-- Filter Tabs -->
@@ -1163,11 +1430,12 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="A 40-seater TATA LP commercial staff coach and route bus parked outside a modern transport terminal on a sunny day. Pristine aerodynamic styling, bright LED headlights, panoramic passenger windows, and a metallic clean finish reflecting light."
               src="img/tata-3600-staff-bus/blue-staff-bus.jpg" />
-            
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
-              <h3 class="font-headline-sm text-lg font-bold text-on-surface">TATA 3600WB Route Bus &amp; Staff Coach</h3>
+              <h3 class="font-headline-sm text-lg font-bold text-on-surface">TATA 3600WB Route Bus &amp; Staff Coach
+              </h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
                 The TATA 3600 WB Route Bus & Staff Coach is engineered to meet the demanding requirements of corporate
                 campuses, BPO fleets, and municipal route lines.
@@ -1199,22 +1467,23 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="A 40-seater TATA LP commercial staff coach and route bus parked outside a modern transport terminal on a sunny day. Pristine aerodynamic styling, bright LED headlights, panoramic passenger windows, and a metallic clean finish reflecting light."
               src="img/tata-4500-staff-bus/white-staff-bus.jpg" />
-           
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
-              <h3 class="font-headline-sm text-lg font-bold text-on-surface">TATA 4500WB Route Bus &amp; Staff Coach</h3>
+              <h3 class="font-headline-sm text-lg font-bold text-on-surface">TATA 4500WB Route Bus &amp; Staff Coach
+              </h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
                 Built on heavy-duty TATA LP platforms. Designed for intercity shuttles, IT staff mobility, and state
                 transit routes with anti-vibration rubber mounted floors.
               </p>
-             
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
-              
-             <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
+
+              <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="tata-4500-route-staff-bus.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1237,22 +1506,23 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="A 40-seater TATA LP commercial staff coach and route bus parked outside a modern transport terminal on a sunny day. Pristine aerodynamic styling, bright LED headlights, panoramic passenger windows, and a metallic clean finish reflecting light."
               src="img/tata-5200-staff-bus/tata-staff-5200-51.jpeg" />
-           
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
-              <h3 class="font-headline-sm text-lg font-bold text-on-surface">TATA 5200WB Route Bus &amp; Staff Coach</h3>
+              <h3 class="font-headline-sm text-lg font-bold text-on-surface">TATA 5200WB Route Bus &amp; Staff Coach
+              </h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
                 Built on heavy-duty TATA LP platforms. Designed for intercity shuttles, IT staff mobility, and state
                 transit routes with anti-vibration rubber mounted floors.
               </p>
-              
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
-             
+
               <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="tata-5200-route-staff-bus.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1276,22 +1546,22 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="A distinctive bright safety-yellow commercial school bus built on a TATA chassis, parked inside a modern school campus. The bus is equipped with stop-sign paddles, exterior safety flashing lamps, child-safe low boarding steps, and pristine tinted safety glass windows."
               src="img/tata-5200-school-bus/tata-school-5200-21.jpeg" />
-            
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
               <h3 class="font-headline-sm text-lg font-bold text-on-surface">Tata 3600WB School Bus</h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
                 Mandatory AIS-063 code compliance. Features child-friendly low entryway steps, emergency rear exit door,
                 fire suppression extinguishers, and CCTV telemetry racks.
               </p>
-              
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
-              
+
               <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="tata-3600-school-bus.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1314,22 +1584,22 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="A distinctive bright safety-yellow commercial school bus built on a TATA chassis, parked inside a modern school campus. The bus is equipped with stop-sign paddles, exterior safety flashing lamps, child-safe low boarding steps, and pristine tinted safety glass windows."
               src="img/tata-4500-school-bus/tata-4500-school-bus-01.jpeg" />
-           
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
               <h3 class="font-headline-sm text-lg font-bold text-on-surface">Tata 4500WB School Bus</h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
                 Mandatory AIS-063 code compliance. Features child-friendly low entryway steps, emergency rear exit door,
                 fire suppression extinguishers, and CCTV telemetry racks.
               </p>
-             
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
-              
+
               <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="tata-4500-school-bus.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1352,22 +1622,22 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="A distinctive bright safety-yellow commercial school bus built on a TATA chassis, parked inside a modern school campus. The bus is equipped with stop-sign paddles, exterior safety flashing lamps, child-safe low boarding steps, and pristine tinted safety glass windows."
               src="img/school-bus01.png" />
-            
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
               <h3 class="font-headline-sm text-lg font-bold text-on-surface">Tata 5200WB School Bus</h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
                 Mandatory AIS-063 code compliance. Features child-friendly low entryway steps, emergency rear exit door,
                 fire suppression extinguishers, and CCTV telemetry racks.
               </p>
-             
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
-            
-             <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
+
+              <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="tata-5200-school-bus.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1396,22 +1666,21 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="An emergency Basic Life Support white medical ambulance built on a TATA Winger platform with red reflective emergency medical striping and roof LED lightbar. The vehicle is stationed in front of an emergency hospital trauma center with clear daylight reflecting off the clean sanitary exterior."
               src="img/tata-winger.png" />
-           
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
               <h3 class="font-headline-sm text-lg font-bold text-on-surface">TATA Winger Ambulance</h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
-                Turnkey emergency transfer ambulance. Equipped with manifold oxygen delivery system, 1000W pure sine
-                wave inverter, washable vinyl flooring, and auto-loading stretcher.
+                Built with seamless anti-bacterial sanitary wall cladding, integrated oxygen delivery system, auto-loading stretcher, and emergency monitoring telemetry.
               </p>
-             
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
-             
+
               <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="tata-winger-ambulance.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1433,22 +1702,22 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="Interior of an advanced critical care mobile ICU ambulance showing high-tech life support equipment. It features an integrated ventilator monitor, defibrillator, high-grade white stainless cabinetry, sterile medical ceiling lights, and an ergonomic doctors swivel chair in immaculate clean setting."
               src="img/advanced-life-support.png" />
-           
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
               <h3 class="font-headline-sm text-lg font-bold text-on-surface">Force T1 Ambulance</h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
                 Mobile intensive care unit configured for transport ventilation, defibrillator integration, precision
                 medical gases piping, and antibacterial seamless interior panelling.
               </p>
-             
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
-             
+
               <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="force-t1-ambulance.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1470,22 +1739,22 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="Interior of an advanced critical care mobile ICU ambulance showing high-tech life support equipment. It features an integrated ventilator monitor, defibrillator, high-grade white stainless cabinetry, sterile medical ceiling lights, and an ergonomic doctors swivel chair in immaculate clean setting."
               src="img/force-t2-ambulance/force-t2-ambulance-101.jpeg" />
-           
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
               <h3 class="font-headline-sm text-lg font-bold text-on-surface">Force T2 Ambulance</h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
                 Mobile intensive care unit configured for transport ventilation, defibrillator integration, precision
                 medical gases piping, and antibacterial seamless interior panelling.
               </p>
-             
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
-              
+
               <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="force-t2-ambulance.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1499,7 +1768,7 @@
             </div>
           </div>
         </div>
-         <!-- Ambu 4: ALS Ambulance (Mitr/TATA) -->
+        <!-- Ambu 4: ALS Ambulance (Mitr/TATA) -->
         <div
           class="folio-busesd medical forcefp rounded-xl bg-surface-container-lowest border border-subtle-border overflow-hidden hover:shadow-lg transition-all group flex flex-col"
           data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
@@ -1507,22 +1776,22 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="Interior of an advanced critical care mobile ICU ambulance showing high-tech life support equipment. It features an integrated ventilator monitor, defibrillator, high-grade white stainless cabinetry, sterile medical ceiling lights, and an ergonomic doctors swivel chair in immaculate clean setting."
               src="img/nhai-t2-force/nhai-t2-21.jpeg" />
-           
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
               <h3 class="font-headline-sm text-lg font-bold text-on-surface">Force T2 NHAI Ambulance</h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
                 Intensive care unit configured for transport ventilation, defibrillator integration, precision
                 medical gases piping, and antibacterial seamless interior panelling.
               </p>
-              
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
-             
+
               <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="nhai-force-t2.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1544,22 +1813,22 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="A specialized mobile healthbusese diagnostic clinic bus custom fabricated with lead-lined radiographic room, doctor consultation booth, and hydraulic wheelchair ramp. Parked in a rural public health camp setting under clear daylight."
               src="img/mobile-medical-unit.png" />
-           
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
               <h3 class="font-headline-sm text-lg font-bold text-on-surface">Force T1 3350 MMU Ambulance</h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
                 Heavy chassis mobile hospital containing 2mm lead-lined imaging zone, darkroom/digital workstation,
                 doctor examination space, and dual onboard gensets.
               </p>
-             
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
-             
+
               <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="force-t2-ambulance.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1573,8 +1842,8 @@
             </div>
           </div>
         </div>
-        
-        
+
+
         <!-- Ambu 7: Police Troop busesrier & Prison Van -->
         <div
           class="folio-busesd medical rounded-xl bg-surface-container-lowest border border-subtle-border overflow-hidden hover:shadow-lg transition-all group flex flex-col"
@@ -1583,21 +1852,22 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="A tactical police personnel busesrier bus with protective wire mesh window guards and sturdy reinforced steel bumpers. Deep tactical navy color scheme parked on an institutional parade ground with high contrast clean lighting."
               src="img/maruti-pts/van-61.jpeg" />
-          
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
               <h3 class="font-headline-sm text-lg font-bold text-on-surface"> Maruti Suzuki Eeco PTV Ambulance</h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
-                Defibrillator integration Intensive care unit configured for transport ventilation, precision medical gases piping, and antibacterial seamless interior panelling.
+                Defibrillator integration Intensive care unit configured for transport ventilation, precision medical
+                gases piping, and antibacterial seamless interior panelling.
               </p>
-              
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
-              
+
               <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="maruti-suzuki-eeco-va-pvt.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1621,20 +1891,19 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="A tactical police personnel busesrier bus with protective wire mesh window guards and sturdy reinforced steel bumpers. Deep tactical navy color scheme parked on an institutional parade ground with high contrast clean lighting."
               src="img/mitr-ambulance/tata-mitr-blood-ambulance-11.jpeg" />
-          
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
-              <h3 class="font-headline-sm text-lg font-bold text-on-surface">MITR Ambulance</h3>
+              <h3 class="font-headline-sm text-lg font-bold text-on-surface">Blood Donation Ambulance</h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
-                Engineered on the heavy-duty high-roof Mitr platform for critical patient inter-facility transfers,
-                cardiac emergencies, neonatal mobile care, and high-dependency hospital response.
+                Built on a high-capacity platform equipped with ergonomic donor seating, temperature-controlled blood bag refrigeration, and onboard processing equipment for high-efficiency mobile blood donation drives.
               </p>
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
               <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="blood-donation-ambulance.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1656,21 +1925,21 @@
             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               data-alt="A tactical police personnel busesrier bus with protective wire mesh window guards and sturdy reinforced steel bumpers. Deep tactical navy color scheme parked on an institutional parade ground with high contrast clean lighting."
               src="img/al-mitr-3700wb/ashok-layland-mitr-11.jpg" />
-           
+
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
+          <div class="p-5 flex-1 flex flex-col justify-between bg-slate-surface">
             <div>
               <h3 class="font-headline-sm text-lg font-bold text-on-surface">Ashok Leyland MITR Ambulance</h3>
               <p class="text-body-sm text-on-surface-variant mt-2">
-                Engineered on the heavy-duty high-roof Mitr platform for critical patient inter-facility transfers,
+                Engineered on the heavy-duty platform for critical patient inter-facility transfers,
                 cardiac emergencies, neonatal mobile care, and high-dependency hospital response.
               </p>
-             
+
             </div>
             <div class="mt-5 pt-3 border-t border-subtle-border space-y-3">
               <div class="flex flex-col sm:flex-row items-center flex items-center gap-2 pt-1">
                 <a class="w-full sm:w-auto text-center flex-1 text-center py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-900 rounded font-label-sm text-xs font-bold transition-all flex items-center justify-center gap-1 group/btn"
-                  href="tata-3600-route-staff-bus.html">
+                  href="al-mitr-ambulance.html">
                   <span class="">Know More</span>
                   <span class="material-symbols-outlined text-xs transition-transform group-hover/btn:translate-x-0.5"
                     data-icon="arrow_forward">arrow_forward</span>
@@ -1700,7 +1969,7 @@
 
 
 
-  
+
 
   <!-- Interactive RFQ Quick Estimator & Inquiry Section -->
 
@@ -1780,18 +2049,18 @@
 
       <div class="pt-5 lg:mt-2 mx-auto">
         <div class="grid grid-cols-2 gap-8 text-gray-500 md:grid-cols-3 lg:grid-cols-6">
-          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-1.png" alt="Client"
-            data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
-          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-2.png" alt="Client"
-            data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
-          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-3.png" alt="Client"
-            data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
-          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-4.png" alt="Client"
-            data-aos="fade-up" data-aos-duration="900" data-aos-delay="500">
-          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-5.png" alt="Client"
-            data-aos="fade-up" data-aos-duration="900" data-aos-delay="600">
-          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-6.png" alt="Client"
-            data-aos="fade-up" data-aos-duration="900" data-aos-delay="700">
+          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-1.png" alt="Client" data-aos="fade-up"
+            data-aos-duration="900" data-aos-delay="200">
+          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-2.png" alt="Client" data-aos="fade-up"
+            data-aos-duration="900" data-aos-delay="300">
+          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-3.png" alt="Client" data-aos="fade-up"
+            data-aos-duration="900" data-aos-delay="400">
+          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-4.png" alt="Client" data-aos="fade-up"
+            data-aos-duration="900" data-aos-delay="500">
+          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-5.png" alt="Client" data-aos="fade-up"
+            data-aos-duration="900" data-aos-delay="600">
+          <img class="border p-2 rounded-lg" src="img/oem-customer/cl-6.png" alt="Client" data-aos="fade-up"
+            data-aos-duration="900" data-aos-delay="700">
         </div>
       </div>
 
@@ -1799,21 +2068,26 @@
   </section>
 
   <section class="sks-padding bg-white border-b border-subtle-border" id="certifications">
-   
+
     <div class="mx-auto lg:max-w-[1100px]">
       <div class="mb-5 lg:mb-6 text-center">
-        <h1 class="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-charcoal tracking-normal leading-[1.12] mb-6" data-aos="fade-up" data-aos-duration="900">
+        <h1 class="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-charcoal tracking-normal leading-[1.12] mb-6"
+          data-aos="fade-up" data-aos-duration="900">
           <span class="text-secondary">CERTIFICATIONS & APPROVALS</span>
         </h1>
-        
+
       </div>
 
       <div class="pt-5 lg:mt-2 mx-auto">
         <div class="grid grid-cols-1 gap-8 text-gray-500 md:grid-cols-4 lg:grid-cols-4">
-          <img class="shadow" src="img/certificates/certificate_658_sks_automotive_pvt_ltd-1.png" alt="Client" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
-          <img class="shadow" src="img/certificates/iso-9001-sks.png" alt="Client" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
-          <img class="shadow" src="img/certificates/startup-dpiit-certificate-sks.png" alt="Client" data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
-          <img class="shadow" src="img/certificates/udyam-registration-certificate.png" alt="Client" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500">
+          <img class="shadow" src="img/certificates/certificate_658_sks_automotive_pvt_ltd-1.png" alt="Client"
+            data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+          <img class="shadow" src="img/certificates/iso-9001-sks.png" alt="Client" data-aos="fade-up"
+            data-aos-duration="900" data-aos-delay="300">
+          <img class="shadow" src="img/certificates/startup-dpiit-certificate-sks.png" alt="Client" data-aos="fade-up"
+            data-aos-duration="900" data-aos-delay="400">
+          <img class="shadow" src="img/certificates/udyam-registration-certificate.png" alt="Client" data-aos="fade-up"
+            data-aos-duration="900" data-aos-delay="500">
         </div>
       </div>
 
@@ -1821,7 +2095,7 @@
   </section>
 
   <!-- Footer (Shared Component) -->
-    <footer class="text-on-primary border-t border-primary-container bg-dark-textured bg-black" id="contact">
+  <footer class="text-on-primary border-t border-primary-container bg-dark-textured bg-black" id="contact">
     <div class="max-w-7xl mx-auto  pt-16 px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
         <!-- Credential 1 -->
@@ -1874,19 +2148,23 @@
             </div>
             <div class="flex flex-col">
               <div class="flex flex-col">
-              <span class="font-heading font-black text-lg tracking-tight flex items-center text-[#fff]">
-            SKS AUTOMOTIVE PVT. LTD.
-              </span>
-              <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold -mt-3">SANATAN GROUP</span>
-            </div>
-              
+                <span class="font-heading font-black text-lg tracking-tight flex items-center text-[#fff]">
+                  SKS AUTOMOTIVE PVT. LTD.
+                </span>
+                <span class="text-[10px] uppercase tracking-widest text-zinc-400 font-semibold -mt-3">SANATAN
+                  GROUP</span>
+              </div>
+
             </div>
           </a>
         </div>
         <p class="text-body-sm text-chrome-metallic leading-relaxed">
-          SKS AUTOMOTIVE PVT. LTD. is a sister concern company of SANATAN GROUP, a flagship commercial vehicle body building entity of the prestigious Sanatan Group. We bridge raw powertrain chassis, passenger-first transport solutions. From heavy-duty city route buses to mission-critical mobile ICUs and specialized disaster relief vehicles.
+          SKS AUTOMOTIVE PVT. LTD. is a sister concern company of SANATAN GROUP, a flagship commercial vehicle body
+          building entity of the prestigious Sanatan Group. We bridge raw powertrain chassis, passenger-first transport
+          solutions. From heavy-duty city route buses to mission-critical mobile ICUs and specialized disaster relief
+          vehicles.
         </p>
-        
+
         <div>
           <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-2">
             Plant &amp; Works Location
@@ -1894,12 +2172,12 @@
           <p class="text-body-sm text-chrome-metallic leading-relaxed mb-3">
             <strong class="text-white">Factory & Headquarters</strong><br />
             Khasra No. 80/2/1, Village Bardari,<br />
-             Super Corridor, Indore - 453111, MP
+            Super Corridor, Indore - 453111, MP
           </p>
           <p class="text-body-sm text-chrome-metallic leading-relaxed mb-3">
             <strong class="text-white">Corporate Address</strong><br />
             Survey No 81/2, Bardari, Super Corridor,<br />
-             Sanwer Road, Indore – 453551, MP
+            Sanwer Road, Indore – 453551, MP
           </p>
 
         </div>
@@ -1911,21 +2189,24 @@
         <h4 class="text-sm font-bold text-white uppercase tracking-wider">Quick Links</h4>
         <ul class="space-y-2.5 text-sm">
           <li><a href="index.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Home</a></li>
-          <li><a href="aboutus.html" class="text-chrome-metallic hover:text-on-primary transition-colors">About Us</a></li>
-          <li><a href="product-facilities.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Product Facilities</a></li>
+          <li><a href="aboutus.html" class="text-chrome-metallic hover:text-on-primary transition-colors">About Us</a>
+          </li>
+          <li><a href="product-facilities.html"
+              class="text-chrome-metallic hover:text-on-primary transition-colors">Product Facilities</a></li>
           <li><a href="ambulances.html"
               class="text-chrome-metallic hover:text-on-primary transition-colors">Ambulances</a></li>
           <li><a href="staff-buses.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Staff &
               Route Bus</a></li>
           <li><a href="school-buses.html" class="text-chrome-metallic hover:text-on-primary transition-colors">School
               Bus</a></li>
-          <li><a href="coming-soon.html" class="text-chrome-metallic hover:text-on-primary transition-colors">FAQ</a></li>
+          <li><a href="coming-soon.html" class="text-chrome-metallic hover:text-on-primary transition-colors">FAQ</a>
+          </li>
           <li><a href="after-sales.html" class="text-chrome-metallic hover:text-on-primary transition-colors">After
               Sales</a></li>
           <li><a href="contact-us.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Contact</a>
           </li>
-          <li><a href="coming-soon.html"
-              class="text-chrome-metallic hover:text-on-primary transition-colors">Career</a></li>
+          <li><a href="coming-soon.html" class="text-chrome-metallic hover:text-on-primary transition-colors">Career</a>
+          </li>
         </ul>
 
       </div>
@@ -1955,7 +2236,8 @@
               href="maruti-suzuki-eeco-va.html">Maruti Suzuki Eeco VA Ambulance</a></li> -->
           <li><a class="text-chrome-metallic hover:text-on-primary transition-colors"
               href="maruti-suzuki-eeco-va-pvt.html">Maruti Suzuki Eeco Ambulance</a></li>
-          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors" href="mitr-ambulance.html">MITR Ambulance</a></li>
+          <li><a class="text-chrome-metallic hover:text-on-primary transition-colors" href="mitr-ambulance.html">MITR
+              Ambulance</a></li>
         </ul>
       </div>
       <!-- Corporate & Factory Works (Col 3) -->
@@ -1966,17 +2248,19 @@
             Contact / RFQ
           </h4>
           <ul class="space-y-1 text-body-sm">
-             <li class="flex items-center gap-2 text-chrome-metallic">
+            <li class="flex items-center gap-2 text-chrome-metallic">
               <span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="call">call</span>
-              <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal" href="tel:+919243561550">
-              <span class="text-white font-medium">+91 92435 61550</span></a>
+              <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
+                href="tel:+919243561550">
+                <span class="text-white font-medium">+91 92435 61550</span></a>
             </li>
             <li class="flex items-center gap-2 text-chrome-metallic">
               <span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="call">call</span>
-              <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal" href="tel:+919201837575">
-              <span class="text-white font-medium">+91 92018 37575</span></a>
+              <a class="flex items-center gap-1.5 hover:text-surface-container-lowest transition-colors font-label-sm tracking-normal"
+                href="tel:+919201837575">
+                <span class="text-white font-medium">+91 92018 37575</span></a>
             </li>
-           
+
             <li class="flex items-center gap-2 text-chrome-metallic">
               <span class="material-symbols-outlined text-secondary-fixed text-base" data-icon="mail">mail</span>
               <a class="hover:underline" href="mailto:sales.skssanatan@gmail.com">sales.skssanatan@gmail.com</a>
@@ -2035,7 +2319,8 @@
     <!-- Copyright Sub-strip -->
     <div class="border-t border-subtle-border/10 py-6 text-center text-xs text-chrome-metallic px-6">
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 px-7">
-        <span>© 2026 SKS AUTOMOTIVE PVT. LTD. Pvt Ltd (Sanatan Group). All Rights Reserved. ISO 9001:2015 &amp; ARAI Certified
+        <span>© 2026 SKS AUTOMOTIVE PVT. LTD. Pvt Ltd (Sanatan Group). All Rights Reserved. ISO 9001:2015 &amp; ARAI
+          Certified
           Body Builder.</span>
         <div class="flex gap-4">
           <!-- <a class="hover:underline" href="#">AIS-052 Compliance</a>
@@ -2141,42 +2426,94 @@
     }
   </script>
 
-  <!-- <aside aria-label="Quick Contact Actions"
-    class="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-2.5 items-end pr-2 md:pr-4 pointer-events-none">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Marquee Interactive Controls
+      const track = document.getElementById('marqueeTrack');
+      const togglePlayBtn = document.getElementById('togglePlayBtn');
+      const playPauseIcon = document.getElementById('playPauseIcon');
+      const playPauseText = document.getElementById('playPauseText');
 
-    <a aria-label="Chat on WhatsApp"
-      class="pointer-events-auto group flex items-center bg-[#075E54] hover:bg-[#128C7E] text-white p-2.5 md:p-3 rounded-full shadow-xl transition-all duration-700 hover:shadow-2xl hover:-translate-x-1 border border-white/20"
-      href="https://wa.me/917723018035" rel="noopener noreferrer" target="_blank"><span
-        class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-label-md text-xs font-semibold px-0 group-hover:px-2">WhatsApp
-        Inquiry</span><span class="flex items-center justify-center w-6 h-6"><svg
-          class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
-          <path
-            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
-          </path>
-        </svg></span></a>
+      const toggleSpeedBtn = document.getElementById('toggleSpeedBtn');
+      const speedText = document.getElementById('speedText');
 
-        <a aria-label="Call Sales Desk directly"
-      class="pointer-events-auto group flex items-center bg-[#0B192C] hover:bg-[#1E3E62] text-white px-3.5 py-2.5 rounded-full shadow-xl transition-all duration-700 hover:shadow-2xl hover:-translate-x-1 border border-white/20"
-      href="tel:+917723018035"><span
-        class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-label-md text-xs font-semibold px-0 group-hover:px-2">Direct
-        Call: +91 77230 18035</span><span class="material-symbols-outlined text-xl text-white"
-        data-icon="call">call</span></a>
-        
-        <a aria-label="Jump to RFQ Form"
-      class="pointer-events-auto group flex items-center bg-amber-600 hover:bg-amber-500 text-white px-3.5 py-2.5 rounded-full shadow-xl transition-all duration-700 hover:shadow-2xl hover:-translate-x-1 border border-white/20"
-      href="#rfq-section"><span
-        class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-label-md text-xs font-semibold px-0 group-hover:px-2">Quick
-        RFQ Estimator</span><span class="material-symbols-outlined text-xl text-white"
-        data-icon="request_quote">request_quote</span></a>
-      
-      </aside>
-      <button aria-label="Back to Top"
-    class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-[#0B192C] text-white flex items-center justify-center shadow-xl border border-slate-700 hover:bg-slate-800 hover:-translate-y-1 transition-all duration-300 group cursor-pointer"
-    onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to Top"><svg
-      class="w-5 h-5 text-white transition-transform group-hover:-translate-y-0.5" fill="none" stroke="currentColor"
-      viewBox="0 0 24 24">
-      <path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
-    </svg></button> -->
+      const reverseDirBtn = document.getElementById('reverseDirBtn');
+
+      let isPaused = false;
+      let currentSpeed = 1; // 1 = 38s, 2 = 20s, 0.5 = 60s
+      let isReversed = false;
+
+      // Play/Pause
+      togglePlayBtn.addEventListener('click', () => {
+        isPaused = !isPaused;
+        if (isPaused) {
+          track.classList.add('is-paused');
+          playPauseIcon.textContent = 'play_arrow';
+          playPauseText.textContent = 'RESUME';
+        } else {
+          track.classList.remove('is-paused');
+          playPauseIcon.textContent = 'pause';
+          playPauseText.textContent = 'PAUSE';
+        }
+      });
+
+      // Speed Toggle
+      toggleSpeedBtn.addEventListener('click', () => {
+        if (currentSpeed === 1) {
+          currentSpeed = 2; // Fast
+          track.style.setProperty('--marquee-duration', '18s');
+          speedText.textContent = '2.0X CADENCE';
+        } else if (currentSpeed === 2) {
+          currentSpeed = 0.5; // Slow
+          track.style.setProperty('--marquee-duration', '58s');
+          speedText.textContent = '0.5X CADENCE';
+        } else {
+          currentSpeed = 1; // Normal
+          track.style.setProperty('--marquee-duration', '38s');
+          speedText.textContent = '1.0X CADENCE';
+        }
+      });
+
+      // Reverse Direction
+      reverseDirBtn.addEventListener('click', () => {
+        isReversed = !isReversed;
+        if (isReversed) {
+          track.classList.add('reverse-direction');
+        } else {
+          track.classList.remove('reverse-direction');
+        }
+      });
+
+      // 2. Specifications Matrix Tabs
+      const tabButtons = document.querySelectorAll('.spec-tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetTab = btn.getAttribute('data-tab');
+
+          // Deactivate all buttons
+          tabButtons.forEach(b => {
+            b.classList.remove('active', 'bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container-highest', 'text-on-surface-variant');
+          });
+
+          // Activate clicked button
+          btn.classList.add('active', 'bg-primary', 'text-on-primary');
+          btn.classList.remove('bg-surface-container-highest', 'text-on-surface-variant');
+
+          // Hide all content tabs
+          tabContents.forEach(c => c.classList.remove('active'));
+
+          // Show targeted tab
+          const activeContent = document.getElementById(targetTab);
+          if (activeContent) {
+            activeContent.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
